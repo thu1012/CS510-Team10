@@ -17,6 +17,7 @@ const PropertyCard = ({ property }: { property: Property }) => {
         <h4>{property.formattedAddress}</h4>
         <p>{property.propertyType} | {property.bedrooms} bd / {property.bathrooms} ba</p>
         <p>Price: ${property.price?.toLocaleString()}</p>
+        {property.rent && <p>Rent: ${property.rent.toLocaleString()}</p>}
         {property.rentalYield && <p>Rental Yield: {property.rentalYield}%</p>}
         {property.investmentScore && <p>Investment Score: {property.investmentScore}/10</p>}
       </div>

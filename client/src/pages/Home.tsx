@@ -7,7 +7,9 @@ import { getEnrichedProperties } from '../api/loadProperties'
 import { Property } from '../types/Property'
 
 const Home = () => {
-  const [sortBy, setSortBy] = useState<'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore'>('investmentScore')
+  const [sortBy, setSortBy] = useState<
+    'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore'
+  >('investmentScore')
   const [minPrice, setMinPrice] = useState(1)
   const [maxPrice, setMaxPrice] = useState(1000000)
   const [minRent, setMinRent] = useState(0)
@@ -116,40 +118,42 @@ const Home = () => {
   const query = searchQuery.toLowerCase()
 
   const filtered = allProperties
-  .filter((p) => {
-    const passesPrice = (() => {
-      if (enableMinPrice && (p.price == null || p.price < minPrice)) return false
-      if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false
-      return true
-    })()
+    .filter((p) => {
+      const passesPrice = (() => {
+        if (enableMinPrice && (p.price == null || p.price < minPrice)) return false
+        if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false
+        return true
+      })()
 
-    const passes = passesPrice &&
-      (!enableMinRent || (p.rent ?? 0) >= minRent) &&
-      (!enableMinYield || (p.rentalYield ?? 0) >= minYield) &&
-      (!enableMinBeds || (p.bedrooms ?? 0) >= minBeds) &&
-      (!enableMinBaths || (p.bathrooms ?? 0) >= minBaths) &&
-      (!enableMinSqft || (p.squareFootage ?? 0) >= minSqft) &&
-      (!enableMinScore || (p.investmentScore ?? 0) >= minScore) &&
-      (!enableMinDays || (p.daysOnMarket ?? 0) >= minDaysOnMarket) &&
-      (!enableMaxDays || (p.daysOnMarket ?? Infinity) <= maxDaysOnMarket) &&
-      (p.propertyType?.toLowerCase().includes(propertyType.toLowerCase())) &&
-      (
-        p.formattedAddress?.toLowerCase().includes(query) ||
-        p.city?.toLowerCase().includes(query) ||
-        p.zipCode?.toLowerCase().includes(query)
-      )
+      const passes = passesPrice &&
+        (!enableMinRent || (p.rent ?? 0) >= minRent) &&
+        (!enableMinYield || (p.rentalYield ?? 0) >= minYield) &&
+        (!enableMinBeds || (p.bedrooms ?? 0) >= minBeds) &&
+        (!enableMinBaths || (p.bathrooms ?? 0) >= minBaths) &&
+        (!enableMinSqft || (p.squareFootage ?? 0) >= minSqft) &&
+        (!enableMinScore || (p.investmentScore ?? 0) >= minScore) &&
+        (!enableMinDays || (p.daysOnMarket ?? 0) >= minDaysOnMarket) &&
+        (!enableMaxDays || (p.daysOnMarket ?? Infinity) <= maxDaysOnMarket) &&
+        (p.propertyType?.toLowerCase().includes(propertyType.toLowerCase())) &&
+        (
+          p.formattedAddress?.toLowerCase().includes(query) ||
+          p.city?.toLowerCase().includes(query) ||
+          p.zipCode?.toLowerCase().includes(query)
+        )
 
       return passes
     })
     .sort((a, b) => {
-      const key = sortBy.startsWith('price') ? 'price' : sortBy
+      const isPriceSort = sortBy.startsWith('price')
+      const isRentSort = sortBy.startsWith('rent')
+      const key = isPriceSort ? 'price' : isRentSort ? 'rent' : sortBy
+      
       const aVal = a[key as keyof Property] as number ?? 0
       const bVal = b[key as keyof Property] as number ?? 0
-      
-      if (sortBy === 'priceAsc') {
-        return aVal - bVal
-      }
-      return bVal - aVal 
+
+      if (sortBy.endsWith('Asc')) return aVal - bVal
+      if (sortBy.endsWith('Desc')) return bVal - aVal
+      return bVal - aVal
     })
 
   return (
