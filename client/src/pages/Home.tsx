@@ -3,10 +3,9 @@ import Filters from '../components/Filters'
 import SearchBar from '../components/SearchBar'
 import PropertyCard from '../components/PropertyCard'
 import { getEnrichedProperties } from '../api/loadProperties'
-// import { Property } from '../types/Property'
 
 const Home = () => {
-  const [sortBy, setSortBy] = useState<'price' | 'rentalYield' | 'investmentScore'>('investmentScore')
+  const [sortBy, setSortBy] = useState<'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore'>('investmentScore')
   const [minPrice, setMinPrice] = useState(1)
   const [maxPrice, setMaxPrice] = useState(1000000)
   const [minBeds, setMinBeds] = useState(0)
@@ -40,36 +39,41 @@ const Home = () => {
       )
     )
     .sort((a, b) => {
-      const aVal = a[sortBy as keyof Property] as number ?? 0
-      const bVal = b[sortBy as keyof Property] as number ?? 0
-      return bVal - aVal
+      const key = sortBy.startsWith('price') ? 'price' : sortBy
+      const aVal = a[key as keyof Property] as number ?? 0
+      const bVal = b[key as keyof Property] as number ?? 0
+      
+      if (sortBy === 'priceAsc') {
+        return aVal - bVal
+      }
+      return bVal - aVal 
     })
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh' }}>
       <div style={{ width: '250px', backgroundColor: '#f2f2f2', padding: '1rem' }}>
-      <Filters
-        minPrice={minPrice}
-        maxPrice={maxPrice}
-        setMinPrice={setMinPrice}
-        setMaxPrice={setMaxPrice}
-        minYield={minYield}
-        setMinYield={setMinYield}
-        sortBy={sortBy}
-        setSortBy={setSortBy}
-        minBeds={minBeds}
-        setMinBeds={setMinBeds}
-        minBaths={minBaths}
-        setMinBaths={setMinBaths}
-        propertyType={propertyType}
-        setPropertyType={setPropertyType}
-        minSqft={minSqft}
-        setMinSqft={setMinSqft}
-        minScore={minScore}
-        setMinScore={setMinScore}
-        maxDaysOnMarket={maxDaysOnMarket}
-        setMaxDaysOnMarket={setMaxDaysOnMarket}
-      />
+        <Filters
+          minPrice={minPrice}
+          maxPrice={maxPrice}
+          setMinPrice={setMinPrice}
+          setMaxPrice={setMaxPrice}
+          minYield={minYield}
+          setMinYield={setMinYield}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
+          minBeds={minBeds}
+          setMinBeds={setMinBeds}
+          minBaths={minBaths}
+          setMinBaths={setMinBaths}
+          propertyType={propertyType}
+          setPropertyType={setPropertyType}
+          minSqft={minSqft}
+          setMinSqft={setMinSqft}
+          minScore={minScore}
+          setMinScore={setMinScore}
+          maxDaysOnMarket={maxDaysOnMarket}
+          setMaxDaysOnMarket={setMaxDaysOnMarket}
+        />
       </div>
       <div style={{ flex: 1, padding: '1rem' }}>
         <div style={{ paddingRight: '1.5rem' }}>
