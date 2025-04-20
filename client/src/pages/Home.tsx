@@ -116,9 +116,14 @@ const Home = () => {
   const query = searchQuery.toLowerCase()
 
   const filtered = allProperties
-    .filter((p) =>
-      (!enableMinPrice || (p.price ?? 0) >= minPrice) &&
-      (!enableMaxPrice || (p.price ?? 0) <= maxPrice) &&
+  .filter((p) => {
+    const passesPrice = (() => {
+      if (enableMinPrice && (p.price == null || p.price < minPrice)) return false
+      if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false
+      return true
+    })()
+
+    const passes = passesPrice &&
       (!enableMinRent || (p.rent ?? 0) >= minRent) &&
       (!enableMinYield || (p.rentalYield ?? 0) >= minYield) &&
       (!enableMinBeds || (p.bedrooms ?? 0) >= minBeds) &&
@@ -133,7 +138,9 @@ const Home = () => {
         p.city?.toLowerCase().includes(query) ||
         p.zipCode?.toLowerCase().includes(query)
       )
-    )
+
+      return passes
+    })
     .sort((a, b) => {
       const key = sortBy.startsWith('price') ? 'price' : sortBy
       const aVal = a[key as keyof Property] as number ?? 0
