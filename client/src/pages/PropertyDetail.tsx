@@ -19,8 +19,29 @@ const PropertyDetail = () => {
 
   if (!property) return <p style={{ padding: '2rem' }}>Property not found.</p>
 
-  const saleData = require('../data/sale.json')
-  const saleRecord = saleData.find((s: any) => s.formattedAddress === property?.formattedAddress)
+  const {
+    formattedAddress,
+    propertyType,
+    bedrooms,
+    bathrooms,
+    squareFootage,
+    zipCode,
+    state,
+    yearBuilt,
+    lotSize,
+    price,
+    rent,
+    rentalYield,
+    investmentScore,
+    saleInfo,
+    listingAgent,
+    listingOffice
+  } = property
+
+  const hoaFee = saleInfo?.hoa?.fee
+  const mlsName = saleInfo?.mlsName
+  const mlsNumber = saleInfo?.mlsNumber
+  const history = saleInfo?.history
 
   return (
     <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
@@ -28,33 +49,66 @@ const PropertyDetail = () => {
         ← Back to search
       </Link>
 
-      <h1 style={{ marginBottom: '0.5rem' }}>{property.formattedAddress}</h1>
-      <h3 style={{ marginTop: 0, color: '#555' }}>{property.propertyType} • {property.bedrooms} bd • {property.bathrooms} ba</h3>
+      <h1 style={{ marginBottom: '0.5rem' }}>{formattedAddress}</h1>
+      <h3 style={{ marginTop: 0, color: '#555' }}>{propertyType} • {bedrooms} bd • {bathrooms} ba</h3>
 
       <div style={sectionStyle}>
         <h4>Financial Details</h4>
-        <p><strong>Price:</strong> ${property.price?.toLocaleString()}</p>
-        <p><strong>Rental Yield:</strong> {property.rentalYield}%</p>
-        <p><strong>Investment Score:</strong> {property.investmentScore}/10</p>
+        <p><strong>Price:</strong> {price ? `$${price.toLocaleString()}` : 'N/A'}</p>
+        <p><strong>Estimated Rent:</strong> {rent ? `$${rent.toLocaleString()}` : 'N/A'}</p>
+        <p><strong>Rental Yield:</strong> {rentalYield ? `${rentalYield}%` : 'N/A'}</p>
+        <p><strong>Investment Score:</strong> {investmentScore ?? 'N/A'}/10</p>
+        {hoaFee && <p><strong>HOA Fee:</strong> ${hoaFee}/mo</p>}
       </div>
 
       <div style={sectionStyle}>
         <h4>Property Specs</h4>
-        <p><strong>Square Footage:</strong> {property.squareFootage ?? 'N/A'}</p>
-        <p><strong>ZIP Code:</strong> {property.zipCode}</p>
-        <p><strong>State:</strong> {property.state}</p>
+        <p><strong>Square Footage:</strong> {squareFootage ? `${squareFootage.toLocaleString()} sqft` : 'N/A'}</p>
+        <p><strong>Lot Size:</strong> {lotSize ? `${lotSize.toLocaleString()} sqft` : 'N/A'}</p>
+        <p><strong>Year Built:</strong> {yearBuilt || 'N/A'}</p>
+        <p><strong>ZIP Code:</strong> {zipCode}</p>
+        <p><strong>State:</strong> {state}</p>
       </div>
 
       <div style={sectionStyle}>
-        <h4>Owner & Occupancy</h4>
-        <p><strong>Owner Occupied:</strong> {property.ownerOccupied ? 'Yes' : 'No'}</p>
-        {/* You can add owner name/mailing address from original JSON if needed */}
+        <h4>Listing Information</h4>
+        {mlsName && mlsNumber && <p><strong>MLS:</strong> {mlsName} #{mlsNumber}</p>}
+        {listingAgent && (
+          <p>
+            <strong>Agent:</strong> {listingAgent.name}
+            {listingAgent.phone && ` • ${listingAgent.phone}`}
+            {listingAgent.email && ` • ${listingAgent.email}`}
+            {listingAgent.website && (
+              <>
+                <br />
+                <a href={listingAgent.website} target="_blank" rel="noopener noreferrer">
+                  Agent Website
+                </a>
+              </>
+            )}
+          </p>
+        )}
+        {listingOffice && (
+          <p>
+            <strong>Office:</strong> {listingOffice.name}
+            {listingOffice.phone && ` • ${listingOffice.phone}`}
+            {listingOffice.email && ` • ${listingOffice.email}`}
+            {listingOffice.website && (
+              <>
+                <br />
+                <a href={listingOffice.website} target="_blank" rel="noopener noreferrer">
+                  Office Website
+                </a>
+              </>
+            )}
+          </p>
+        )}
       </div>
 
-      {saleRecord?.history && (
+      {history && (
         <div style={sectionStyle}>
           <h4>Price History</h4>
-          <PriceHistoryChart history={saleRecord.history} />
+          <PriceHistoryChart history={history} />
         </div>
       )}
     </div>

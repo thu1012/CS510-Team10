@@ -1,113 +1,91 @@
 import React from 'react'
-import FilterGroup from './FilterGroup'
+import SliderFilter from './SliderFilter'
 
 type Props = {
   minPrice: number
   maxPrice: number
-  setMinPrice: (v: number) => void
-  setMaxPrice: (v: number) => void
+  setMinPrice: (val: number) => void
+  setMaxPrice: (val: number) => void
   minYield: number
-  setMinYield: (v: number) => void
-  sortBy: string
-  setSortBy: (v: any) => void
+  setMinYield: (val: number) => void
+  sortBy: 'price' | 'rentalYield' | 'investmentScore'
+  setSortBy: (val: 'price' | 'rentalYield' | 'investmentScore') => void
   minBeds: number
-  setMinBeds: (v: number) => void
+  setMinBeds: (val: number) => void
   minBaths: number
-  setMinBaths: (v: number) => void
+  setMinBaths: (val: number) => void
+  propertyType: string
+  setPropertyType: (val: string) => void
+  minSqft: number
+  setMinSqft: (val: number) => void
+  minScore: number
+  setMinScore: (val: number) => void
+  maxDaysOnMarket: number
+  setMaxDaysOnMarket: (val: number) => void
 }
 
-const inputStyle = {
+const dropdownStyle: React.CSSProperties = {
   width: '100%',
   padding: '0.4rem',
-  fontSize: '1rem',
-  borderRadius: '4px',
+  marginTop: '0.5rem',
+  fontSize: '0.95rem',
+  borderRadius: '6px',
   border: '1px solid #ccc',
-  marginRight: '1rem'
+  backgroundColor: '#fff',
+  appearance: 'none'
 }
 
-const sliderStyle = {
-  width: '100%',
-  marginTop: '0.5rem'
-}
+const FilterGroup = ({ label, children }: { label: string; children: React.ReactNode }) => (
+  <div style={{ marginBottom: '1rem' }}>
+    <label style={{ fontSize: '0.95rem', fontWeight: 500 }}>{label}</label>
+    {children}
+  </div>
+)
 
 const Filters = ({
   minPrice, maxPrice, setMinPrice, setMaxPrice,
-  minYield, setMinYield,
-  sortBy, setSortBy,
-  minBeds, setMinBeds,
-  minBaths, setMinBaths
+  minYield, setMinYield, sortBy, setSortBy,
+  minBeds, setMinBeds, minBaths, setMinBaths,
+  propertyType, setPropertyType,
+  minSqft, setMinSqft, minScore, setMinScore,
+  maxDaysOnMarket, setMaxDaysOnMarket
 }: Props) => {
   return (
-    <div style={{ fontFamily: 'sans-serif' }}>
-      <h3 style={{ marginBottom: '1rem' }}>Filters</h3>
-
-      <FilterGroup label={`Min Price: $${minPrice.toLocaleString()}`}>
-        <input
-          type="range"
-          style={sliderStyle}
-          min={0}
-          max={2000000}
-          step={10000}
-          value={minPrice}
-          onChange={(e) => setMinPrice(+e.target.value)}
-        />
-      </FilterGroup>
-
-      <FilterGroup label={`Max Price: $${maxPrice.toLocaleString()}`}>
-        <input
-          type="range"
-          style={sliderStyle}
-          min={minPrice}
-          max={2000000}
-          step={10000}
-          value={maxPrice}
-          onChange={(e) => setMaxPrice(+e.target.value)}
-        />
-      </FilterGroup>
-
-      <FilterGroup label={`Min Bedrooms: ${minBeds}`}>
-        <input
-          type="range"
-          style={sliderStyle}
-          min={0}
-          max={10}
-          step={1}
-          value={minBeds}
-          onChange={(e) => setMinBeds(+e.target.value)}
-        />
-      </FilterGroup>
-
-      <FilterGroup label={`Min Bathrooms: ${minBaths}`}>
-        <input
-          type="range"
-          style={sliderStyle}
-          min={0}
-          max={10}
-          step={0.5}
-          value={minBaths}
-          onChange={(e) => setMinBaths(+e.target.value)}
-        />
-      </FilterGroup>
-
-      <FilterGroup label={`Min Rental Yield (%): ${minYield}`}>
-        <input
-          type="range"
-          style={sliderStyle}
-          min={0}
-          max={20}
-          step={0.1}
-          value={minYield}
-          onChange={(e) => setMinYield(+e.target.value)}
-        />
-      </FilterGroup>
-
+    <div>
       <FilterGroup label="Sort By">
-        <select style={inputStyle} value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+        <select
+          style={dropdownStyle}
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value as 'price' | 'rentalYield' | 'investmentScore')}
+        >
           <option value="price">Price</option>
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
         </select>
       </FilterGroup>
+
+      <FilterGroup label="Property Type">
+        <select
+          style={dropdownStyle}
+          value={propertyType}
+          onChange={(e) => setPropertyType(e.target.value)}
+        >
+          <option value="">All</option>
+          <option value="Single Family">Single Family</option>
+          <option value="Condo">Condo</option>
+          <option value="Townhouse">Townhouse</option>
+          <option value="Multi-Family">Multi-Family</option>
+        </select>
+      </FilterGroup>
+
+      <SliderFilter label="Min Price" value={minPrice} setValue={setMinPrice} min={0} max={2000000} step={10000} prefix="$" />
+      <SliderFilter label="Max Price" value={maxPrice} setValue={setMaxPrice} min={50000} max={5000000} step={50000} prefix="$" />
+      <SliderFilter label="Min Rental Yield" value={minYield} setValue={setMinYield} min={0} max={20} step={0.1} suffix="%" />
+      <SliderFilter label="Min Bedrooms" value={minBeds} setValue={setMinBeds} min={0} max={10} step={1} />
+      <SliderFilter label="Min Bathrooms" value={minBaths} setValue={setMinBaths} min={0} max={10} step={0.5} />
+      <SliderFilter label="Min Sqft" value={minSqft} setValue={setMinSqft} min={0} max={10000} step={100} />
+      <SliderFilter label="Min Score" value={minScore} setValue={setMinScore} min={0} max={10} step={0.1} />
+      <SliderFilter label="Max Days on Market" value={maxDaysOnMarket} setValue={setMaxDaysOnMarket} min={0} max={3650} step={5} />
     </div>
   )
 }
