@@ -21799,6 +21799,123 @@
     "saleInfo": null
   },
   {
+    "id": "2451-W-Foster-Ave-Unit-G,-Chicago,-IL-60625",
+    "formattedAddress": "2451 W Foster Ave Unit G, Chicago, IL 60625",
+    "rentInfo": {
+      "id": "2451-W-Foster-Ave-Unit-G,-Chicago,-IL-60625",
+      "formattedAddress": "2451 W Foster Ave Unit G, Chicago, IL 60625",
+      "addressLine1": "2451 W Foster Ave Unit G",
+      "addressLine2": null,
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": "60625",
+      "county": "Cook",
+      "latitude": 41.975605,
+      "longitude": -87.691111,
+      "propertyType": "Condo",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "squareFootage": null,
+      "yearBuilt": 1925,
+      "hoa": {
+        "fee": 250
+      },
+      "status": "Active",
+      "price": 1960,
+      "listingType": "Rent Estimate",
+      "listedDate": "2025-03-04T00:00:00.000Z",
+      "removedDate": null,
+      "createdDate": "2025-03-04T00:00:00.000Z",
+      "lastSeenDate": "2025-04-16T09:11:00.000Z",
+      "daysOnMarket": 43,
+      "history": {
+        "2025-03-04": {
+          "event": "Rental Listing",
+          "price": 1960,
+          "listingType": "Rent Estimate",
+          "listedDate": "2025-03-04T00:00:00.000Z",
+          "removedDate": null,
+          "daysOnMarket": 43
+        }
+      }
+    },
+    "saleInfo": {
+      "id": "2451-W-Foster-Ave-Unit-G,-Chicago,-IL-60625",
+      "formattedAddress": "2451 W Foster Ave Unit G, Chicago, IL 60625",
+      "addressLine1": "2451 W Foster Ave Unit G",
+      "addressLine2": null,
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": "60625",
+      "county": "Cook",
+      "latitude": 41.975605,
+      "longitude": -87.691111,
+      "propertyType": "Condo",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "yearBuilt": 1925,
+      "hoa": {
+        "fee": 250
+      },
+      "status": "Active",
+      "price": 250000,
+      "listingType": "Standard",
+      "listedDate": "2025-03-04T00:00:00.000Z",
+      "removedDate": null,
+      "createdDate": "2022-07-09T17:01:02.117Z",
+      "lastSeenDate": "2025-04-15T13:46:37.492Z",
+      "daysOnMarket": 43,
+      "mlsName": "MRED",
+      "mlsNumber": "12303734",
+      "listingAgent": {
+        "name": "Tyler Ramey",
+        "phone": "8476436512",
+        "email": "tyler.ramey@dreamtown.com",
+        "website": "https://tylersellschicago.com"
+      },
+      "listingOffice": {
+        "name": "Dream Town Realty",
+        "phone": "7733266500",
+        "email": "lsfrontdesk@dreamtown.com",
+        "website": "http://www.dreamtown.com/"
+      },
+      "history": {
+        "2024-12-09": {
+          "event": "Sale Listing",
+          "price": 264000,
+          "listingType": "Standard",
+          "listedDate": "2024-12-09T00:00:00.000Z",
+          "removedDate": "2025-01-17T00:00:00.000Z",
+          "daysOnMarket": 39
+        },
+        "2025-01-17": {
+          "event": "Sale Listing",
+          "price": 250000,
+          "listingType": "Standard",
+          "listedDate": "2025-01-17T00:00:00.000Z",
+          "removedDate": "2025-02-20T00:00:00.000Z",
+          "daysOnMarket": 34
+        },
+        "2025-02-20": {
+          "event": "Sale Listing",
+          "price": 260000,
+          "listingType": "Standard",
+          "listedDate": "2025-02-20T00:00:00.000Z",
+          "removedDate": "2025-03-04T00:00:00.000Z",
+          "daysOnMarket": 12
+        },
+        "2025-03-04": {
+          "event": "Sale Listing",
+          "price": 250000,
+          "listingType": "Standard",
+          "listedDate": "2025-03-04T00:00:00.000Z",
+          "removedDate": null,
+          "daysOnMarket": 43
+        }
+      }
+    }
+  },
+  {
     "id": "317-N-St-Louis-St,-Unit-2,-Sparta,-IL-62286",
     "formattedAddress": "317 N St Louis St, Unit 2, Sparta, IL 62286",
     "rentInfo": {
@@ -109863,86 +109980,6 @@
         "2025-03-04": {
           "event": "Sale Listing",
           "price": 300980,
-          "listingType": "Standard",
-          "listedDate": "2025-03-04T00:00:00.000Z",
-          "removedDate": null,
-          "daysOnMarket": 43
-        }
-      }
-    }
-  },
-  {
-    "id": "2451-W-Foster-Ave-Unit-G,-Chicago,-IL-60625",
-    "formattedAddress": "2451 W Foster Ave Unit G, Chicago, IL 60625",
-    "rentInfo": null,
-    "saleInfo": {
-      "id": "2451-W-Foster-Ave-Unit-G,-Chicago,-IL-60625",
-      "formattedAddress": "2451 W Foster Ave Unit G, Chicago, IL 60625",
-      "addressLine1": "2451 W Foster Ave Unit G",
-      "addressLine2": null,
-      "city": "Chicago",
-      "state": "IL",
-      "zipCode": "60625",
-      "county": "Cook",
-      "latitude": 41.975605,
-      "longitude": -87.691111,
-      "propertyType": "Condo",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "yearBuilt": 1925,
-      "hoa": {
-        "fee": 250
-      },
-      "status": "Active",
-      "price": 250000,
-      "listingType": "Standard",
-      "listedDate": "2025-03-04T00:00:00.000Z",
-      "removedDate": null,
-      "createdDate": "2022-07-09T17:01:02.117Z",
-      "lastSeenDate": "2025-04-15T13:46:37.492Z",
-      "daysOnMarket": 43,
-      "mlsName": "MRED",
-      "mlsNumber": "12303734",
-      "listingAgent": {
-        "name": "Tyler Ramey",
-        "phone": "8476436512",
-        "email": "tyler.ramey@dreamtown.com",
-        "website": "https://tylersellschicago.com"
-      },
-      "listingOffice": {
-        "name": "Dream Town Realty",
-        "phone": "7733266500",
-        "email": "lsfrontdesk@dreamtown.com",
-        "website": "http://www.dreamtown.com/"
-      },
-      "history": {
-        "2024-12-09": {
-          "event": "Sale Listing",
-          "price": 264000,
-          "listingType": "Standard",
-          "listedDate": "2024-12-09T00:00:00.000Z",
-          "removedDate": "2025-01-17T00:00:00.000Z",
-          "daysOnMarket": 39
-        },
-        "2025-01-17": {
-          "event": "Sale Listing",
-          "price": 250000,
-          "listingType": "Standard",
-          "listedDate": "2025-01-17T00:00:00.000Z",
-          "removedDate": "2025-02-20T00:00:00.000Z",
-          "daysOnMarket": 34
-        },
-        "2025-02-20": {
-          "event": "Sale Listing",
-          "price": 260000,
-          "listingType": "Standard",
-          "listedDate": "2025-02-20T00:00:00.000Z",
-          "removedDate": "2025-03-04T00:00:00.000Z",
-          "daysOnMarket": 12
-        },
-        "2025-03-04": {
-          "event": "Sale Listing",
-          "price": 250000,
           "listingType": "Standard",
           "listedDate": "2025-03-04T00:00:00.000Z",
           "removedDate": null,
