@@ -1,0 +1,70 @@
+# ==========================================
+# OS-specific / System files
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# IDEs / Editors
+# ==========================================
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ==========================================
+# Build / Dependency folders
+# ==========================================
+node_modules/
+client/node_modules/
+client/build/
+dist/
+out/
+bin/
+
+# ==========================================
+# Environment / Python cache
+# ==========================================
+.env
+env/
+__pycache__/
+
+# ==========================================
+# VS Code and JetBrains Specific
+# ==========================================
+.sts4-cache/
+.classpath
+.factorypath
+.project
+.settings
+.apt_generated
+.springBeans
+
+# ==========================================
+# Gradle
+# ==========================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ==========================================
+# NetBeans
+# ==========================================
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ==========================================
+# React App Artifacts
+# ==========================================
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+client/yarn.lock
