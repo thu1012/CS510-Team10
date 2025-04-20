@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SliderFilter from './SliderFilter'
 
 type Props = {
@@ -8,8 +8,8 @@ type Props = {
   setMaxPrice: (val: number) => void
   minYield: number
   setMinYield: (val: number) => void
-  sortBy: 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore'
-  setSortBy: (val: 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore') => void
+  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore'
+  setSortBy: (val: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore') => void
   minBeds: number
   setMinBeds: (val: number) => void
   minBaths: number
@@ -27,7 +27,6 @@ type Props = {
   maxDaysOnMarket: number
   setMaxDaysOnMarket: (val: number) => void
   
-
   enableMinPrice: boolean
   enableMaxPrice: boolean
   enableMinYield: boolean
@@ -39,7 +38,6 @@ type Props = {
   enableMinDays: boolean
   enableMaxDays: boolean
   
-
   setEnableMinPrice: (enabled: boolean) => void
   setEnableMaxPrice: (enabled: boolean) => void
   setEnableMinYield: (enabled: boolean) => void
@@ -95,10 +93,12 @@ const Filters = ({
         <select
           style={dropdownStyle}
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore')}
+          onChange={(e) => setSortBy(e.target.value as any)}
         >
           <option value="priceDesc">Price (High to Low)</option>
           <option value="priceAsc">Price (Low to High)</option>
+          <option value="rentDesc">Rent (High to Low)</option>
+          <option value="rentAsc">Rent (Low to High)</option>
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
         </select>
