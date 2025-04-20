@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
 import { getEnrichedProperties } from '../api/loadProperties'
 import { Property } from '../types/Property'
 import PriceHistoryChart from '../components/PriceHistoryChart'
@@ -14,6 +14,7 @@ const sectionStyle = {
 
 const PropertyDetail = () => {
   const { id } = useParams()
+  const location = useLocation()
   const allProperties: Property[] = getEnrichedProperties()
   const property = allProperties.find((p) => p.id === id)
 
@@ -45,7 +46,18 @@ const PropertyDetail = () => {
 
   return (
     <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
-      <Link to="/" style={{ display: 'inline-block', marginBottom: '1rem', textDecoration: 'none', color: '#007bff' }}>
+      <Link
+        to={{
+          pathname: '/',
+          search: location.search // <- reattaches previous filters
+        }}
+        style={{
+          display: 'inline-block',
+          marginBottom: '1rem',
+          textDecoration: 'none',
+          color: '#007bff'
+        }}
+      >
         ← Back to search
       </Link>
 

@@ -9,6 +9,8 @@ type Props = {
   step: number
   prefix?: string
   suffix?: string
+  enabled?: boolean
+  setEnabled?: (enabled: boolean) => void
 }
 
 const sliderStyle: React.CSSProperties = {
@@ -20,49 +22,64 @@ const sliderStyle: React.CSSProperties = {
 const SliderFilter = ({
   label, value, setValue,
   min, max, step,
-  prefix = '', suffix = ''
+  prefix = '', suffix = '',
+  enabled = true,
+  setEnabled
 }: Props) => {
   const [editing, setEditing] = useState(false)
 
-  const handleClick = () => {
-    setEditing(true)
-  }
+  const handleClick = () => setEditing(true)
+  const handleBlur = () => setEditing(false)
 
-  const handleBlur = () => {
-    setEditing(false)
-  }
+  const showSlider = enabled && setEnabled
 
   return (
     <div style={{ marginBottom: '1rem' }}>
-      <div onClick={handleClick} style={{ cursor: 'pointer', fontSize: '0.95rem', fontWeight: 500 }}>
-        {label}: {!editing && <span>{prefix}{value.toLocaleString()}{suffix}</span>}
+      <div
+        onClick={handleClick}
+        style={{ cursor: 'pointer', fontSize: '0.95rem', fontWeight: 500, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+      >
+        <span>{label}: {!editing && <span>{prefix}{value.toLocaleString()}{suffix}</span>}</span>
+        {setEnabled && (
+          <input
+            type="checkbox"
+            checked={enabled}
+            onChange={(e) => setEnabled(e.target.checked)}
+            style={{ marginLeft: '0.5rem' }}
+          />
+        )}
       </div>
-      {editing && (
-        <input
-          type="number"
-          value={value}
-          onChange={(e) => setValue(+e.target.value)}
-          onBlur={handleBlur}
-          autoFocus
-          style={{
-            width: '100%',
-            marginTop: '0.3rem',
-            padding: '0.4rem',
-            borderRadius: '4px',
-            border: '1px solid #ccc',
-            fontSize: '0.95rem'
-          }}
-        />
+
+      {showSlider && (
+        <>
+          {editing && (
+            <input
+              type="number"
+              value={value}
+              onChange={(e) => setValue(+e.target.value)}
+              onBlur={handleBlur}
+              autoFocus
+              style={{
+                width: '100%',
+                marginTop: '0.3rem',
+                padding: '0.4rem',
+                borderRadius: '4px',
+                border: '1px solid #ccc',
+                fontSize: '0.95rem'
+              }}
+            />
+          )}
+          <input
+            type="range"
+            min={min}
+            max={max}
+            step={step}
+            value={value}
+            onChange={(e) => setValue(+e.target.value)}
+            style={sliderStyle}
+          />
+        </>
       )}
-      <input
-        type="range"
-        min={min}
-        max={max}
-        step={step}
-        value={value}
-        onChange={(e) => setValue(+e.target.value)}
-        style={sliderStyle}
-      />
     </div>
   )
 }
