@@ -7,7 +7,7 @@ import { getEnrichedProperties } from '../api/loadProperties'
 import { Property } from '../types/Property'
 
 const Home = () => {
-  const [sortBy, setSortBy] = useState<'price' | 'rentalYield' | 'investmentScore'>('investmentScore')
+  const [sortBy, setSortBy] = useState<'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore'>('investmentScore')
   const [minPrice, setMinPrice] = useState(1)
   const [maxPrice, setMaxPrice] = useState(1000000)
   const [minRent, setMinRent] = useState(0)
@@ -135,9 +135,14 @@ const Home = () => {
       )
     )
     .sort((a, b) => {
-      const aVal = a[sortBy as keyof Property] as number ?? 0
-      const bVal = b[sortBy as keyof Property] as number ?? 0
-      return bVal - aVal
+      const key = sortBy.startsWith('price') ? 'price' : sortBy
+      const aVal = a[key as keyof Property] as number ?? 0
+      const bVal = b[key as keyof Property] as number ?? 0
+      
+      if (sortBy === 'priceAsc') {
+        return aVal - bVal
+      }
+      return bVal - aVal 
     })
 
   return (
