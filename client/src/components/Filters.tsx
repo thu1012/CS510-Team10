@@ -8,8 +8,8 @@ type Props = {
   setMaxPrice: (val: number) => void
   minYield: number
   setMinYield: (val: number) => void
-  sortBy: 'price' | 'rentalYield' | 'investmentScore'
-  setSortBy: (val: 'price' | 'rentalYield' | 'investmentScore') => void
+  sortBy: 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore'
+  setSortBy: (val: 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore') => void
   minBeds: number
   setMinBeds: (val: number) => void
   minBaths: number
@@ -56,9 +56,10 @@ const Filters = ({
         <select
           style={dropdownStyle}
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as 'price' | 'rentalYield' | 'investmentScore')}
+          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentalYield' | 'investmentScore')}
         >
-          <option value="price">Price</option>
+          <option value="priceDesc">Price (High to Low)</option>
+          <option value="priceAsc">Price (Low to High)</option>
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
         </select>
