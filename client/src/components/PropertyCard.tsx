@@ -1,13 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { Property } from '../types/Property'
 
-const PropertyCard = () => {
+const PropertyCard = ({ property }: { property: Property }) => {
   return (
-    <div style={{ border: '1px solid #ccc', padding: '1rem' }}>
-      <h4>123 Sample St, City</h4>
-      <p>$500,000</p>
-      <p>Est. Rental Yield: 6.5%</p>
-      <p>Investment Score: 8.2/10</p>
-    </div>
+    <Link to={`/property/${encodeURIComponent(property.id)}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div style={{ border: '1px solid #ccc', padding: '1rem', cursor: 'pointer' }}>
+        <h4>{property.formattedAddress}</h4>
+        <p>{property.propertyType} | {property.bedrooms} bd / {property.bathrooms} ba</p>
+        <p>Price: ${property.price?.toLocaleString()}</p>
+        {property.rentalYield && <p>Rental Yield: {property.rentalYield}%</p>}
+        {property.investmentScore && <p>Investment Score: {property.investmentScore}/10</p>}
+      </div>
+    </Link>
   )
 }
 
