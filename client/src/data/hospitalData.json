@@ -1,0 +1,5586 @@
+[
+  {
+    "Zipcode": 60002,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60004,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60005,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60007,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60008,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60010,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60012,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60013,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60014,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60015,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60016,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60018,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60020,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60021,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60022,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60025,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60026,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60029,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60030,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60031,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60033,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60034,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60035,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60040,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60041,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60042,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60043,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60044,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60045,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60046,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60047,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60048,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60050,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60051,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60053,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60056,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60060,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60061,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60062,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60064,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60067,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60068,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60069,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60070,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60071,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60072,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60073,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60074,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60075,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60076,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60077,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60081,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60083,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60084,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60085,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60087,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60088,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60089,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60090,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60091,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60093,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60096,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60097,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60098,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60099,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60101,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60102,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60103,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60104,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60106,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60107,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60108,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60109,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60110,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60111,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60112,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60113,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60115,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60118,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60119,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60120,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60123,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60124,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60126,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60129,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60130,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60131,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60133,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60134,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60135,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60136,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60137,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60139,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60140,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60141,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60142,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60143,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60144,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60145,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60146,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60148,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60150,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60151,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60152,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60153,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60154,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60155,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60156,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60157,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60160,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60162,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60163,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60164,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60165,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60169,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60171,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60172,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60173,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60174,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60175,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60176,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60177,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60178,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60180,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60181,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60183,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60184,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60185,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60187,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60188,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60189,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60190,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60191,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60192,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60193,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60194,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60195,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60201,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60202,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60203,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60208,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60301,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60302,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60304,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60305,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60401,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60402,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60403,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60404,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60406,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60407,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60408,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60409,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60410,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60411,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60415,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60416,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60417,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60418,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60419,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60420,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60421,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60422,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60423,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60424,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60425,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60426,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60428,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60429,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60430,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60431,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60432,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60433,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60435,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60436,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60437,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60438,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60439,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60440,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60441,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60442,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60443,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60444,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60445,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60446,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60447,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60448,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60449,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60450,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60451,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60452,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60453,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60455,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60456,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60457,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60458,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60459,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60460,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60461,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60462,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60463,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60464,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60465,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60466,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60467,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60468,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60469,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60470,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60471,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60472,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60473,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60474,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60475,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60476,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60477,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60478,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60479,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60480,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60481,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60482,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60484,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60487,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60490,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60491,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60501,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60502,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60503,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60504,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60505,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60506,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60510,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60511,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60512,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60513,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60514,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60515,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60516,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60517,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60518,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60519,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60520,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60521,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60523,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60525,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60526,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60527,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60530,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60531,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60532,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60534,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60536,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60537,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60538,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60539,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60540,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60541,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60542,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60543,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60544,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60545,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60546,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60548,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60549,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60550,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60551,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60552,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60553,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60554,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60555,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60556,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60557,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60558,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60559,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60560,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60561,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60563,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60564,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60565,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60585,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60586,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60601,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60602,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60603,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60604,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60605,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60606,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60607,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60608,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60609,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60610,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60611,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60612,
+    "HospitalCount": 3
+  },
+  {
+    "Zipcode": 60613,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60614,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60615,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60616,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60617,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60618,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60619,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60620,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60621,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60622,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60623,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60624,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60625,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60626,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60628,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60629,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60630,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60631,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60632,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60633,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60634,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60636,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60637,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60638,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60639,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60640,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60641,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60642,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60643,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60644,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60645,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60646,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60647,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60649,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60651,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60652,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60653,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60654,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60655,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60656,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60657,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60659,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60660,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60661,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60706,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60707,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60712,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60714,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60803,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60804,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60805,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60827,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60901,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 60910,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60911,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60912,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60913,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60914,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60915,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60917,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60918,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60919,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60920,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60921,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60922,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60924,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60926,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60927,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60928,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60929,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60930,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60931,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60932,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60933,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60934,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60935,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60936,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60938,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60939,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60940,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60941,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60942,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60945,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60946,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60948,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60949,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60950,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60951,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60952,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60953,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60954,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60955,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60956,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60957,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60958,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60959,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60960,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60961,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60962,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60963,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60964,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60966,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60967,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60968,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60969,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60970,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 60973,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 60974,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61001,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61006,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61007,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61008,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61010,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61011,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61012,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61013,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61014,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61015,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61016,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61018,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61019,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61020,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61021,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61024,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61025,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61027,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61028,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61030,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61031,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61032,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61036,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61037,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61038,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61039,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61041,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61042,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61043,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61044,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61046,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61047,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61048,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61049,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61050,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61051,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61052,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61053,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61054,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61057,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61059,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61060,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61061,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61062,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61063,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61064,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61065,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61067,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61068,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61070,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61071,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61072,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61073,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61074,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61075,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61077,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61078,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61079,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61080,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61081,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61084,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61085,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61087,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61088,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61089,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61091,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61101,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61102,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61103,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61104,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61107,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61108,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61109,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61111,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61112,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61114,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61115,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61201,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61230,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61231,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61232,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61233,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61234,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61235,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61236,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61237,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61238,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61239,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61240,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61241,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61242,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61243,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61244,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61250,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61251,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61252,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61254,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61256,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61257,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61258,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61259,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61260,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61261,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61262,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61263,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61264,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61265,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61270,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61272,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61273,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61274,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61275,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61276,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61277,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61278,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61279,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61281,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61282,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61283,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61284,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61285,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61301,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61310,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61311,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61312,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61313,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61314,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61315,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61316,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61317,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61318,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61319,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61320,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61321,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61322,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61323,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61324,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61325,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61326,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61327,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61328,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61329,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61330,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61331,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61332,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61333,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61334,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61335,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61336,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61337,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61338,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61340,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61341,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61342,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61344,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61345,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61346,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61348,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61349,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61350,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61353,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61354,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61356,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61358,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61359,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61360,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61361,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61362,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61363,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61364,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61367,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61368,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61369,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61370,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61371,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61372,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61373,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61374,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61375,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61376,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61377,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61378,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61379,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61401,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61402,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61410,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61411,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61412,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61413,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61414,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61415,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61416,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61417,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61418,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61419,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61420,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61421,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61422,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61423,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61424,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61425,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61426,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61427,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61428,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61430,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61431,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61432,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61433,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61434,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61435,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61436,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61437,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61438,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61439,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61440,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61441,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61442,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61443,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61447,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61448,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61449,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61450,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61451,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61452,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61453,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61454,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61455,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61458,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61459,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61460,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61462,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61465,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61466,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61467,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61468,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61469,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61470,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61471,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61472,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61473,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61474,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61475,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61476,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61477,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61478,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61479,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61480,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61482,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61483,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61484,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61485,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61486,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61488,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61489,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61490,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61491,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61501,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61516,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61517,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61519,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61520,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61523,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61524,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61525,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61526,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61528,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61529,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61530,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61531,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61532,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61533,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61534,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61535,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61536,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61537,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61539,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61540,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61541,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61542,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61543,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61544,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61545,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61546,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61547,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61548,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61550,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61552,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61553,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61554,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61559,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61560,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61561,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61562,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61563,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61564,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61565,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61567,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61568,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61569,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61570,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61571,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61572,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61602,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61603,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61604,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61605,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61606,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61607,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61610,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61611,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61614,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61615,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61616,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61625,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61701,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61704,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61705,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61720,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61721,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61722,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61723,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61724,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61725,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61726,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61727,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61728,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61729,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61730,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61731,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61732,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61733,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61734,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61735,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61736,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61737,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61738,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61739,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61740,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61741,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61742,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61743,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61744,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61745,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61747,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61748,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61749,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61750,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61751,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61752,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61753,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61754,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61755,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61756,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61759,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61760,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61761,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61764,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61769,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61770,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61771,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61772,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61773,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61774,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61775,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61776,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61777,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61778,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61801,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 61802,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61810,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61811,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61812,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61813,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61814,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61815,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61816,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61817,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61818,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61820,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61821,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61822,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61830,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61831,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61832,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61833,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61834,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61839,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61840,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61841,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61842,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61843,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61844,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61845,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61846,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61847,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61848,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61849,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61850,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61851,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61852,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61853,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61854,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61855,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61856,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61857,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61858,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61859,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61862,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61863,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61864,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61865,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61866,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61870,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61871,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61872,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61873,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61874,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61875,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61876,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61877,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61878,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61880,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61882,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61883,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61884,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61910,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61911,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61912,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61913,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61914,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61917,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61919,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61920,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61924,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61925,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61928,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61929,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61930,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61931,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61932,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61933,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61936,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61937,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61938,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61940,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61941,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61942,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61943,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61944,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 61949,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61951,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61953,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61955,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61956,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 61957,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62001,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62002,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 62006,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62009,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62010,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62011,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62012,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62013,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62014,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62015,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62016,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62017,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62018,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62019,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62021,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62022,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62023,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62024,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62025,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62026,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62027,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62028,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62030,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62031,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62032,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62033,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62034,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62035,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62036,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62037,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62040,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62044,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62045,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62046,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62047,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62048,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62049,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62050,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62051,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62052,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62053,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62054,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62056,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62058,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62059,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62060,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62061,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62062,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62063,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62067,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62069,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62074,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62075,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62076,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62077,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62078,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62079,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62080,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62081,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62082,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62083,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62084,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62085,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62086,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62087,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62088,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62089,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62090,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62091,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62092,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62093,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62094,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62095,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62097,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62098,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62201,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62203,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62204,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62205,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62206,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62207,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62208,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62214,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62215,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62216,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62217,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62218,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62219,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62220,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62221,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62223,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62225,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62226,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62230,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62231,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62232,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62233,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62234,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62236,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62237,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62238,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62239,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62240,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62241,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62242,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62243,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62244,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62245,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62246,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62248,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62249,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62250,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62253,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62254,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62255,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62256,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62257,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62258,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62260,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62261,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62262,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62263,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62264,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62265,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62266,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62268,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62269,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 62271,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62272,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62273,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62274,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62275,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62277,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62278,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62279,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62280,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62281,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62282,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62284,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62285,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62286,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62288,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62289,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62292,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62293,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62294,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62295,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62297,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62298,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62301,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62305,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62311,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62312,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62313,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62314,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62316,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62319,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62320,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62321,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62323,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62324,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62325,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62326,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62330,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62334,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62336,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62338,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62339,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62340,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62341,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62343,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62344,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62345,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62346,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62347,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62348,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62349,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62351,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62352,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62353,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62354,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62355,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62356,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62357,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62358,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62359,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62360,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62361,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62362,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62363,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62365,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62366,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62367,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62370,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62373,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62374,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62375,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62376,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62378,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62379,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62380,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62401,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62410,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62411,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62413,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62414,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62417,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62418,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62419,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62420,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62421,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62422,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62423,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62424,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62425,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62426,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62427,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62428,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62431,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62432,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62433,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62434,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62436,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62438,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62439,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62440,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62441,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62442,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62443,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62444,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62445,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62446,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62447,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62448,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62449,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62450,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62451,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62452,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62454,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62458,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62459,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62460,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62461,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62462,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62463,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62464,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62465,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62466,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62467,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62468,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62469,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62471,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62473,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62474,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62475,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62476,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62477,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62478,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62479,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62480,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62481,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62501,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62510,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62512,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62513,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62514,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62515,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62517,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62518,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62519,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62520,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62521,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62522,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62523,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62526,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62530,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62531,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62532,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62533,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62534,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62535,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62536,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62537,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62538,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62539,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62540,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62541,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62543,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62544,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62545,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62546,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62547,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62548,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62549,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62550,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62551,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62553,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62554,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62555,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62556,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62557,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62558,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62560,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62561,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62563,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62565,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62567,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62568,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62570,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62571,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62572,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62573,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62601,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62610,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62611,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62612,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62613,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62615,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62617,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62618,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62621,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62622,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62624,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62625,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62626,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62627,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62628,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62629,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62630,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62631,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62633,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62634,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62635,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62638,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62639,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62640,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62642,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62643,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62644,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62649,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62650,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62655,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62656,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62661,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62663,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62664,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62665,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62666,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62667,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62668,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62670,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62671,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62672,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62673,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62674,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62675,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62677,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62681,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62682,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62684,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62685,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62688,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62689,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62690,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62691,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62692,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62693,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62694,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62695,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62701,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62702,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62703,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62704,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62706,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62707,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62711,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62712,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62801,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62803,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62806,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62807,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62808,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62809,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62810,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62811,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62812,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62814,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62815,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62816,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62817,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62818,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62819,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62820,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62821,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62822,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62823,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62824,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62825,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62827,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62828,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62829,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62830,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62831,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62832,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62833,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62835,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62836,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62837,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62838,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62839,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62841,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62842,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62843,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62844,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62846,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62848,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62849,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62850,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62851,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62852,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62853,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62854,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62856,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62858,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62859,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62860,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62861,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62862,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62863,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62864,
+    "HospitalCount": 2
+  },
+  {
+    "Zipcode": 62865,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62867,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62868,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62869,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62870,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62871,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62872,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62874,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62875,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62876,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62877,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62878,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62879,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62880,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62881,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62882,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62883,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62884,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62885,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62886,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62887,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62888,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62889,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62890,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62891,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62892,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62893,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62894,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62895,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62896,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62897,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62898,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62899,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62901,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62902,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62903,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62905,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62906,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62907,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62908,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62910,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62912,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62914,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62915,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62916,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62917,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62918,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62919,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62920,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62921,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62922,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62923,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62924,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62926,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62927,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62928,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62930,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62931,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62932,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62933,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62934,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62935,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62938,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62939,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62940,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62941,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62942,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62943,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62946,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62947,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62948,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62949,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62950,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62951,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62952,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62953,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62954,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62956,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62957,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62958,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62959,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62960,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62961,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62962,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62963,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62964,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62965,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62966,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62967,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62969,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62970,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62972,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62974,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62975,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62976,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62977,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62979,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62982,
+    "HospitalCount": 1
+  },
+  {
+    "Zipcode": 62983,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62984,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62985,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62987,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62988,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62990,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62992,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62994,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62995,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62996,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62997,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62998,
+    "HospitalCount": 0
+  },
+  {
+    "Zipcode": 62999,
+    "HospitalCount": 0
+  }
+]
