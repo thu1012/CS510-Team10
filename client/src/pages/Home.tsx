@@ -1,82 +1,98 @@
-import React, { useState, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
-import Filters from '../components/Filters'
-import SearchBar from '../components/SearchBar'
-import PropertyCard from '../components/PropertyCard'
-import { getEnrichedProperties } from '../api/loadProperties'
-import { Property } from '../types/Property'
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import Filters from '../components/Filters';
+import SearchBar from '../components/SearchBar';
+import PropertyCard from '../components/PropertyCard';
+import { getEnrichedProperties } from '../api/loadProperties';
+import { Property } from '../types/Property';
+import { getRankedProperties } from '../utils/ranking'; // Import the ranking function
 
 const Home = () => {
   const [sortBy, setSortBy] = useState<
-    'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore'
-  >('investmentScore')
-  const [minPrice, setMinPrice] = useState(1)
-  const [maxPrice, setMaxPrice] = useState(1000000)
-  const [minRent, setMinRent] = useState(0)
-  const [minYield, setMinYield] = useState(0)
-  const [minBeds, setMinBeds] = useState(0)
-  const [minBaths, setMinBaths] = useState(0)
-  const [propertyType, setPropertyType] = useState('')
-  const [minSqft, setMinSqft] = useState(0)
-  const [minScore, setMinScore] = useState(0)
-  const [minDaysOnMarket, setMinDaysOnMarket] = useState(0)
-  const [maxDaysOnMarket, setMaxDaysOnMarket] = useState(365)
-  const [searchQuery, setSearchQuery] = useState('')
+    'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore'
+  >('rankingScore'); // Default sort by ranking score
+  const [minPrice, setMinPrice] = useState(1);
+  const [maxPrice, setMaxPrice] = useState(1000000);
+  const [minRent, setMinRent] = useState(0);
+  const [minYield, setMinYield] = useState(0);
+  const [minBeds, setMinBeds] = useState(0);
+  const [minBaths, setMinBaths] = useState(0);
+  const [propertyType, setPropertyType] = useState('');
+  const [minSqft, setMinSqft] = useState(0);
+  const [minScore, setMinScore] = useState(0);
+  const [minDaysOnMarket, setMinDaysOnMarket] = useState(0);
+  const [maxDaysOnMarket, setMaxDaysOnMarket] = useState(365);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const [enableMinPrice, setEnableMinPrice] = useState(true)
-  const [enableMaxPrice, setEnableMaxPrice] = useState(true)
-  const [enableMinRent, setEnableMinRent] = useState(false)
-  const [enableMinYield, setEnableMinYield] = useState(false)
-  const [enableMinBeds, setEnableMinBeds] = useState(false)
-  const [enableMinBaths, setEnableMinBaths] = useState(false)
-  const [enableMinSqft, setEnableMinSqft] = useState(false)
-  const [enableMinScore, setEnableMinScore] = useState(false)
-  const [enableMinDays, setEnableMinDays] = useState(false)
-  const [enableMaxDays, setEnableMaxDays] = useState(false)
+  const [enableMinPrice, setEnableMinPrice] = useState(true);
+  const [enableMaxPrice, setEnableMaxPrice] = useState(true);
+  const [enableMinRent, setEnableMinRent] = useState(false);
+  const [enableMinYield, setEnableMinYield] = useState(false);
+  const [enableMinBeds, setEnableMinBeds] = useState(false);
+  const [enableMinBaths, setEnableMinBaths] = useState(false);
+  const [enableMinSqft, setEnableMinSqft] = useState(false);
+  const [enableMinScore, setEnableMinScore] = useState(false);
+  const [enableMinDays, setEnableMinDays] = useState(false);
+  const [enableMaxDays, setEnableMaxDays] = useState(false);
 
-  const [hydrated, setHydrated] = useState(false)
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [hydrated, setHydrated] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [rankedProperties, setRankedProperties] = useState<
+    (Property & { rankingScore: number })[]
+  >([]);
+
+  // Define your weights for the ranking
+  const rankingWeights = {
+    school: 0.15,
+    crimeRate: 0.25,
+    hospital: 0.10,
+    price: 0.15, // Adjusted weight
+    size: 0.35,  // Adjusted weight
+    investmentScore: 0.0, // Optional: Include if you still want to weigh it
+    rentalYield: 0.0,     // Optional: Include if you still want to weigh it
+    daysOnMarket: 0.0,    // Optional: Include if you still want to weigh it
+  };
 
   useEffect(() => {
     const getParam = (key: string, fallback: number) =>
-      parseFloat(searchParams.get(key) || '') || fallback
-  
-    const getBoolParam = (key: string, fallback = true) =>
-      searchParams.get(key) === 'false' ? false : fallback
+      parseFloat(searchParams.get(key) || '') || fallback;
 
-    const isFirstVisit = searchParams.size === 0
-  
-    setMinPrice(getParam('minPrice', 1))
-    setMaxPrice(getParam('maxPrice', 1000000))
-    setMinRent(getParam('minRent', 0))
-    setMinYield(getParam('minYield', 0))
-    setMinBeds(getParam('minBeds', 0))
-    setMinBaths(getParam('minBaths', 0))
-    setMinSqft(getParam('minSqft', 0))
-    setMinScore(getParam('minScore', 0))
-    setMinDaysOnMarket(getParam('minDaysOnMarket', 0))
-    setMaxDaysOnMarket(getParam('maxDaysOnMarket', 365))
-    setSortBy((searchParams.get('sortBy') as any) || 'investmentScore')
-    setPropertyType(searchParams.get('propertyType') || '')
-    setSearchQuery(searchParams.get('q') || '')
-  
-    setEnableMinPrice(getBoolParam('enableMinPrice', true))
-    setEnableMaxPrice(getBoolParam('enableMaxPrice', true))
-    setEnableMinRent(getBoolParam('enableMinRent', !isFirstVisit))
-    setEnableMinYield(getBoolParam('enableMinYield', !isFirstVisit))
-    setEnableMinBeds(getBoolParam('enableMinBeds', !isFirstVisit))
-    setEnableMinBaths(getBoolParam('enableMinBaths', !isFirstVisit))
-    setEnableMinSqft(getBoolParam('enableMinSqft', !isFirstVisit))
-    setEnableMinScore(getBoolParam('enableMinScore', !isFirstVisit))
-    setEnableMinDays(getBoolParam('enableMinDays', !isFirstVisit))
-    setEnableMaxDays(getBoolParam('enableMaxDays', !isFirstVisit))
-  
-    setHydrated(true)
-  }, [])
+    const getBoolParam = (key: string, fallback = true) =>
+      searchParams.get(key) === 'false' ? false : fallback;
+
+    const isFirstVisit = searchParams.size === 0;
+
+    setMinPrice(getParam('minPrice', 1));
+    setMaxPrice(getParam('maxPrice', 1000000));
+    setMinRent(getParam('minRent', 0));
+    setMinYield(getParam('minYield', 0));
+    setMinBeds(getParam('minBeds', 0));
+    setMinBaths(getParam('minBaths', 0));
+    setMinSqft(getParam('minSqft', 0));
+    setMinScore(getParam('minScore', 0));
+    setMinDaysOnMarket(getParam('minDaysOnMarket', 0));
+    setMaxDaysOnMarket(getParam('maxDaysOnMarket', 365));
+    setSortBy((searchParams.get('sortBy') as any) || 'rankingScore'); // Ensure sortBy is updated from params
+    setPropertyType(searchParams.get('propertyType') || '');
+    setSearchQuery(searchParams.get('q') || '');
+
+    setEnableMinPrice(getBoolParam('enableMinPrice', true));
+    setEnableMaxPrice(getBoolParam('enableMaxPrice', true));
+    setEnableMinRent(getBoolParam('enableMinRent', !isFirstVisit));
+    setEnableMinYield(getBoolParam('enableMinYield', !isFirstVisit));
+    setEnableMinBeds(getBoolParam('enableMinBeds', !isFirstVisit));
+    setEnableMinBaths(getBoolParam('enableMinBaths', !isFirstVisit));
+    setEnableMinSqft(getBoolParam('enableMinSqft', !isFirstVisit));
+    setEnableMinScore(getBoolParam('enableMinScore', !isFirstVisit));
+    setEnableMinDays(getBoolParam('enableMinDays', !isFirstVisit));
+    setEnableMaxDays(getBoolParam('enableMaxDays', !isFirstVisit));
+
+    setHydrated(true);
+  }, [searchParams]);
 
   useEffect(() => {
-    if (!hydrated) return
-  
+    if (!hydrated) return;
+
     setSearchParams({
       minPrice: minPrice.toString(),
       maxPrice: maxPrice.toString(),
@@ -91,7 +107,7 @@ const Home = () => {
       sortBy,
       propertyType,
       q: searchQuery,
-  
+
       enableMinPrice: enableMinPrice.toString(),
       enableMaxPrice: enableMaxPrice.toString(),
       enableMinRent: enableMinRent.toString(),
@@ -102,7 +118,7 @@ const Home = () => {
       enableMinScore: enableMinScore.toString(),
       enableMinDays: enableMinDays.toString(),
       enableMaxDays: enableMaxDays.toString(),
-    })
+    });
   }, [
     hydrated,
     minPrice, maxPrice, minRent, minYield,
@@ -112,18 +128,24 @@ const Home = () => {
     enableMinPrice, enableMaxPrice, enableMinRent,
     enableMinYield, enableMinBeds, enableMinBaths,
     enableMinSqft, enableMinScore, enableMinDays, enableMaxDays
-  ])
+  ]);
 
-  const allProperties: Property[] = getEnrichedProperties()
-  const query = searchQuery.toLowerCase()
+  const allProperties: Property[] = getEnrichedProperties();
 
-  const filtered = allProperties
+  useEffect(() => {
+    const ranked = getRankedProperties(allProperties, rankingWeights);
+    setRankedProperties(ranked);
+  }, [allProperties, rankingWeights]); // Re-rank when properties or weights change
+
+  const query = searchQuery.toLowerCase();
+
+  const filteredAndMaybeRanked = rankedProperties
     .filter((p) => {
       const passesPrice = (() => {
-        if (enableMinPrice && (p.price == null || p.price < minPrice)) return false
-        if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false
-        return true
-      })()
+        if (enableMinPrice && (p.price == null || p.price < minPrice)) return false;
+        if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false;
+        return true;
+      })();
 
       const passes = passesPrice &&
         (!enableMinRent || (p.rent ?? 0) >= minRent) &&
@@ -139,22 +161,26 @@ const Home = () => {
           p.formattedAddress?.toLowerCase().includes(query) ||
           p.city?.toLowerCase().includes(query) ||
           p.zipCode?.toLowerCase().includes(query)
-        )
+        );
 
-      return passes
+      return passes;
     })
     .sort((a, b) => {
-      const isPriceSort = sortBy.startsWith('price')
-      const isRentSort = sortBy.startsWith('rent')
-      const key = isPriceSort ? 'price' : isRentSort ? 'rent' : sortBy
-      
-      const aVal = a[key as keyof Property] as number ?? 0
-      const bVal = b[key as keyof Property] as number ?? 0
+      if (sortBy === 'rankingScore') {
+        return b.rankingScore - a.rankingScore;
+      }
 
-      if (sortBy.endsWith('Asc')) return aVal - bVal
-      if (sortBy.endsWith('Desc')) return bVal - aVal
-      return bVal - aVal
-    })
+      const isPriceSort = sortBy.startsWith('price');
+      const isRentSort = sortBy.startsWith('rent');
+      const key = isPriceSort ? 'price' : isRentSort ? 'rent' : sortBy;
+
+      const aVal = a[key as keyof (Property & { rankingScore: number })] as number ?? 0;
+      const bVal = b[key as keyof (Property & { rankingScore: number })] as number ?? 0;
+
+      if (sortBy.endsWith('Asc')) return aVal - bVal;
+      if (sortBy.endsWith('Desc')) return bVal - aVal;
+      return bVal - aVal;
+    });
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh' }}>
@@ -213,13 +239,13 @@ const Home = () => {
         </div>
         <h3>Search Results</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
-          {filtered.map((prop) => (
+          {filteredAndMaybeRanked.map((prop) => (
             <PropertyCard key={prop.id} property={prop} />
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
