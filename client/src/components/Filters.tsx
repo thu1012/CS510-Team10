@@ -1,54 +1,64 @@
-import React from 'react'
-import SliderFilter from './SliderFilter'
+import React from 'react';
+import SliderFilter from './SliderFilter';
 
 type Props = {
-  minPrice: number
-  maxPrice: number
-  setMinPrice: (val: number) => void
-  setMaxPrice: (val: number) => void
-  minYield: number
-  setMinYield: (val: number) => void
-  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore'
-  setSortBy: (val: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore') => void
-  minBeds: number
-  setMinBeds: (val: number) => void
-  minBaths: number
-  setMinBaths: (val: number) => void
-  propertyType: string
-  setPropertyType: (val: string) => void
-  minSqft: number
-  setMinSqft: (val: number) => void
-  minRent: number
-  setMinRent: (val: number) => void
-  minScore: number
-  setMinScore: (val: number) => void
-  minDaysOnMarket: number
-  setMinDaysOnMarket: (val: number) => void
-  maxDaysOnMarket: number
-  setMaxDaysOnMarket: (val: number) => void
-  
-  enableMinPrice: boolean
-  enableMaxPrice: boolean
-  enableMinYield: boolean
-  enableMinBeds: boolean
-  enableMinBaths: boolean
-  enableMinSqft: boolean
-  enableMinRent: boolean
-  enableMinScore: boolean
-  enableMinDays: boolean
-  enableMaxDays: boolean
-  
-  setEnableMinPrice: (enabled: boolean) => void
-  setEnableMaxPrice: (enabled: boolean) => void
-  setEnableMinYield: (enabled: boolean) => void
-  setEnableMinBeds: (enabled: boolean) => void
-  setEnableMinBaths: (enabled: boolean) => void
-  setEnableMinSqft: (enabled: boolean) => void
-  setEnableMinRent: (enabled: boolean) => void
-  setEnableMinScore: (enabled: boolean) => void
-  setEnableMaxDays: (enabled: boolean) => void
-  setEnableMinDays: (enabled: boolean) => void
-}
+  minPrice: number;
+  maxPrice: number;
+  setMinPrice: (val: number) => void;
+  setMaxPrice: (val: number) => void;
+  minYield: number;
+  setMinYield: (val: number) => void;
+  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance' ; // Added 'rankingScore'
+  setSortBy: (
+    val:
+      | 'priceDesc'
+      | 'priceAsc'
+      | 'rentDesc'
+      | 'rentAsc'
+      | 'rentalYield'
+      | 'investmentScore'
+      | 'rankingScore'
+      | 'textRelevance'  // Added 'rankingScore'
+  ) => void;
+  minBeds: number;
+  setMinBeds: (val: number) => void;
+  minBaths: number;
+  setMinBaths: (val: number) => void;
+  propertyType: string;
+  setPropertyType: (val: string) => void;
+  minSqft: number;
+  setMinSqft: (val: number) => void;
+  minRent: number;
+  setMinRent: (val: number) => void;
+  minScore: number;
+  setMinScore: (val: number) => void;
+  minDaysOnMarket: number;
+  setMinDaysOnMarket: (val: number) => void;
+  maxDaysOnMarket: number;
+  setMaxDaysOnMarket: (val: number) => void;
+
+  enableMinPrice: boolean;
+  enableMaxPrice: boolean;
+  enableMinYield: boolean;
+  enableMinBeds: boolean;
+  enableMinBaths: boolean;
+  enableMinSqft: boolean;
+  enableMinRent: boolean;
+  enableMinScore: boolean;
+  enableMinDays: boolean;
+  enableMaxDays: boolean;
+
+  setEnableMinPrice: (enabled: boolean) => void;
+  setEnableMaxPrice: (enabled: boolean) => void;
+  setEnableMinYield: (enabled: boolean) => void;
+  setEnableMinBeds: (enabled: boolean) => void;
+  setEnableMinBaths: (enabled: boolean) => void;
+  setEnableMinSqft: (enabled: boolean) => void;
+  setEnableMinRent: (enabled: boolean) => void;
+  setEnableMinScore: (enabled: boolean) => void;
+  setEnableMaxDays: (enabled: boolean) => void;
+  setEnableMinDays: (enabled: boolean) => void;
+};
 
 const dropdownStyle: React.CSSProperties = {
   width: '100%',
@@ -58,34 +68,61 @@ const dropdownStyle: React.CSSProperties = {
   borderRadius: '6px',
   border: '1px solid #ccc',
   backgroundColor: '#fff',
-  appearance: 'none'
-}
+  appearance: 'none',
+};
 
 const FilterGroup = ({ label, children }: { label: string; children: React.ReactNode }) => (
   <div style={{ marginBottom: '1rem' }}>
     <label style={{ fontSize: '0.95rem', fontWeight: 500 }}>{label}</label>
     {children}
   </div>
-)
+);
 
 const Filters = ({
-  minPrice, maxPrice, setMinPrice, setMaxPrice,
-  minYield, setMinYield, sortBy, setSortBy,
-  minBeds, setMinBeds, minBaths, setMinBaths,
-  propertyType, setPropertyType,
-  minSqft, setMinSqft, minScore, setMinScore,
-  minDaysOnMarket, setMinDaysOnMarket,
-  maxDaysOnMarket, setMaxDaysOnMarket,
-  minRent, setMinRent,
-  enableMinRent, setEnableMinRent,
-  enableMinDays, setEnableMinDays,
-  
-  enableMinPrice, enableMaxPrice, enableMinYield,
-  enableMinBeds, enableMinBaths, enableMinSqft,
-  enableMinScore, enableMaxDays, 
-  setEnableMinPrice, setEnableMaxPrice, setEnableMinYield,
-  setEnableMinBeds, setEnableMinBaths, setEnableMinSqft,
-  setEnableMinScore, setEnableMaxDays
+  minPrice,
+  maxPrice,
+  setMinPrice,
+  setMaxPrice,
+  minYield,
+  setMinYield,
+  sortBy,
+  setSortBy,
+  minBeds,
+  setMinBeds,
+  minBaths,
+  setMinBaths,
+  propertyType,
+  setPropertyType,
+  minSqft,
+  setMinSqft,
+  minScore,
+  setMinScore,
+  minDaysOnMarket,
+  setMinDaysOnMarket,
+  maxDaysOnMarket,
+  setMaxDaysOnMarket,
+  minRent,
+  setMinRent,
+  enableMinRent,
+  setEnableMinRent,
+  enableMinDays,
+  setEnableMinDays,
+  enableMinPrice,
+  enableMaxPrice,
+  enableMinYield,
+  enableMinBeds,
+  enableMinBaths,
+  enableMinSqft,
+  enableMinScore,
+  enableMaxDays,
+  setEnableMinPrice,
+  setEnableMaxPrice,
+  setEnableMinYield,
+  setEnableMinBeds,
+  setEnableMinBaths,
+  setEnableMinSqft,
+  setEnableMinScore,
+  setEnableMaxDays,
 }: Props) => {
   return (
     <div>
@@ -93,7 +130,7 @@ const Filters = ({
         <select
           style={dropdownStyle}
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as any)}
+          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance')}
         >
           <option value="priceDesc">Price (High to Low)</option>
           <option value="priceAsc">Price (Low to High)</option>
@@ -101,6 +138,8 @@ const Filters = ({
           <option value="rentAsc">Rent (Low to High)</option>
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
+          <option value="rankingScore">Ranking Score</option> {/* Added Ranking Score option */}
+          <option value="textRelevance">Text Relevance</option>
         </select>
       </FilterGroup>
 
@@ -118,6 +157,7 @@ const Filters = ({
         </select>
       </FilterGroup>
 
+      {/* ... (rest of your SliderFilter components) */}
       <SliderFilter
         label="Min Price"
         value={minPrice}
@@ -232,7 +272,7 @@ const Filters = ({
         setEnabled={setEnableMinYield}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Filters
+export default Filters;
