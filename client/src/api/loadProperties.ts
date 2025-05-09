@@ -1,5 +1,5 @@
 // src/api/loadProperties.ts
-import rawData from '../data/mergedProperties.json'
+import rawData from '../data/properties_full.json'
 import { Property } from '../types/Property'
 
 function normalize(value: number, min: number, max: number, inverse = false): number {
