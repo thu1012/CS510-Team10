@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Filters from '../components/Filters';
 import SearchBar from '../components/SearchBar';
@@ -6,10 +6,12 @@ import PropertyCard from '../components/PropertyCard';
 import { getEnrichedProperties } from '../api/loadProperties';
 import { Property } from '../types/Property';
 import { getRankedProperties } from '../utils/ranking'; // Import the ranking function
+import { buildBm25Engine } from '../utils/bm25Engine';
+import descriptions from '../data/description.json'; 
 
 const Home = () => {
   const [sortBy, setSortBy] = useState<
-    'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore'
+    'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance' 
   >('rankingScore'); // Default sort by ranking score
   const [minPrice, setMinPrice] = useState(1);
   const [maxPrice, setMaxPrice] = useState(1000000);
@@ -40,6 +42,8 @@ const Home = () => {
   const [rankedProperties, setRankedProperties] = useState<
     (Property & { rankingScore: number })[]
   >([]);
+
+  const [bm25Scores, setBm25Scores] = useState<Record<number, number>>({});
 
   // Define your weights for the ranking
   const rankingWeights = {
@@ -130,57 +134,116 @@ const Home = () => {
     enableMinSqft, enableMinScore, enableMinDays, enableMaxDays
   ]);
 
-  const allProperties: Property[] = getEnrichedProperties();
+  const allProperties = useMemo<Property[]>(() => {
+    return getEnrichedProperties();
+  }, []);
 
   useEffect(() => {
     const ranked = getRankedProperties(allProperties, rankingWeights);
     setRankedProperties(ranked);
   }, [allProperties, rankingWeights]); // Re-rank when properties or weights change
 
+  const bm25 = useMemo(() => {
+    return buildBm25Engine(
+      (descriptions as Array<{ address: string; description: string }>)
+    );
+  }, [descriptions]);
+
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      return;
+    }
+    // engine.search returns [ [docId, score], … ]
+    const hits = bm25.search(
+      searchQuery,
+      allProperties.length
+    ) as Array<[number, number]>;             // ← cast for TS
+    const map: Record<number, number> = {};
+    hits.forEach(([id, score]) => { map[id] = score; });
+    setBm25Scores(map);
+  }, [searchQuery, bm25]);
+
+  // console.log('BM25 Scores:', bm25Scores);
   const query = searchQuery.toLowerCase();
 
-  const filteredAndMaybeRanked = rankedProperties
-    .filter((p) => {
-      const passesPrice = (() => {
-        if (enableMinPrice && (p.price == null || p.price < minPrice)) return false;
-        if (enableMaxPrice && (p.price == null || p.price > maxPrice)) return false;
+  const filteredAndMaybeRanked = useMemo(() => {
+    const q = searchQuery.toLowerCase().trim();
+    const hasQuery = q.length > 0;
+
+    return rankedProperties
+      // 1) carry index so we can look up bm25Scores without findIndex
+      .map((p, idx) => ({ p, idx }))
+      // 2) filter based on sort mode, BM25 scores, and numeric/text filters
+      .filter(({ p, idx }) => {
+        // a) if user picked Text Relevance, only keep docs BM25 scored > 0
+        if (sortBy === 'textRelevance') {
+          return (bm25Scores[idx] ?? 0) > 0;
+        }
+
+        // b) numeric filters
+        if (enableMinPrice  && (p.price ?? 0)         < minPrice)          return false;
+        if (enableMaxPrice  && (p.price ?? Infinity)  > maxPrice)          return false;
+        if (enableMinRent   && (p.rent  ?? 0)         < minRent)           return false;
+        if (enableMinYield  && (p.rentalYield ?? 0)   < minYield)          return false;
+        if (enableMinBeds   && (p.bedrooms  ?? 0)     < minBeds)           return false;
+        if (enableMinBaths  && (p.bathrooms ?? 0)     < minBaths)          return false;
+        if (enableMinSqft   && (p.squareFootage ?? 0) < minSqft)           return false;
+        if (enableMinScore  && (p.investmentScore ?? 0) < minScore)        return false;
+        if (enableMinDays   && (p.daysOnMarket ?? 0)  < minDaysOnMarket)   return false;
+        if (enableMaxDays   && (p.daysOnMarket ?? Infinity) > maxDaysOnMarket) return false;
+        if (propertyType && !p.propertyType
+            ?.toLowerCase()
+            .includes(propertyType.toLowerCase())
+        ) return false;
+
+        // c) text substring filters (only when not using BM25)
+        if (hasQuery) {
+          const inAddr =
+            p.formattedAddress?.toLowerCase().includes(q) ||
+            p.city?.toLowerCase().includes(q) ||
+            p.zipCode?.toLowerCase().includes(q);
+          if (!inAddr) return false;
+        }
+
         return true;
-      })();
-
-      const passes = passesPrice &&
-        (!enableMinRent || (p.rent ?? 0) >= minRent) &&
-        (!enableMinYield || (p.rentalYield ?? 0) >= minYield) &&
-        (!enableMinBeds || (p.bedrooms ?? 0) >= minBeds) &&
-        (!enableMinBaths || (p.bathrooms ?? 0) >= minBaths) &&
-        (!enableMinSqft || (p.squareFootage ?? 0) >= minSqft) &&
-        (!enableMinScore || (p.investmentScore ?? 0) >= minScore) &&
-        (!enableMinDays || (p.daysOnMarket ?? 0) >= minDaysOnMarket) &&
-        (!enableMaxDays || (p.daysOnMarket ?? Infinity) <= maxDaysOnMarket) &&
-        (p.propertyType?.toLowerCase().includes(propertyType.toLowerCase())) &&
-        (
-          p.formattedAddress?.toLowerCase().includes(query) ||
-          p.city?.toLowerCase().includes(query) ||
-          p.zipCode?.toLowerCase().includes(query)
-        );
-
-      return passes;
-    })
-    .sort((a, b) => {
-      if (sortBy === 'rankingScore') {
-        return b.rankingScore - a.rankingScore;
-      }
-
-      const isPriceSort = sortBy.startsWith('price');
-      const isRentSort = sortBy.startsWith('rent');
-      const key = isPriceSort ? 'price' : isRentSort ? 'rent' : sortBy;
-
-      const aVal = a[key as keyof (Property & { rankingScore: number })] as number ?? 0;
-      const bVal = b[key as keyof (Property & { rankingScore: number })] as number ?? 0;
-
-      if (sortBy.endsWith('Asc')) return aVal - bVal;
-      if (sortBy.endsWith('Desc')) return bVal - aVal;
-      return bVal - aVal;
-    });
+      })
+      .sort((a, b) => {
+        if (sortBy === 'textRelevance') {
+          return (bm25Scores[b.idx] ?? 0) - (bm25Scores[a.idx] ?? 0);
+        }
+        if (sortBy === 'rankingScore') {
+          return b.p.rankingScore - a.p.rankingScore;
+        }
+        // price / rent asc/desc fallback
+        const isPrice = sortBy.startsWith('price');
+        const isRent  = sortBy.startsWith('rent');
+        const key     = isPrice ? 'price' : isRent ? 'rent' : sortBy;
+        const aVal    = (a.p as any)[key] ?? 0;
+        const bVal    = (b.p as any)[key] ?? 0;
+        if (sortBy.endsWith('Asc'))  return aVal - bVal;
+        if (sortBy.endsWith('Desc')) return bVal - aVal;
+        return 0;
+      })
+      // 4) unwrap back to Property[]
+      .map(({ p }) => p);
+  }, [
+    rankedProperties,
+    bm25Scores,
+    searchQuery,
+    sortBy,
+    // numeric filter flags & values
+    enableMinPrice, enableMaxPrice,
+    enableMinRent, enableMinYield,
+    enableMinBeds, enableMinBaths,
+    enableMinSqft, enableMinScore,
+    enableMinDays, enableMaxDays,
+    minPrice, maxPrice,
+    minRent, minYield,
+    minBeds, minBaths,
+    minSqft, minScore,
+    minDaysOnMarket, maxDaysOnMarket,
+    propertyType
+  ]);
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh' }}>

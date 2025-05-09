@@ -8,7 +8,7 @@ type Props = {
   setMaxPrice: (val: number) => void;
   minYield: number;
   setMinYield: (val: number) => void;
-  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore'; // Added 'rankingScore'
+  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance' ; // Added 'rankingScore'
   setSortBy: (
     val:
       | 'priceDesc'
@@ -17,7 +17,8 @@ type Props = {
       | 'rentAsc'
       | 'rentalYield'
       | 'investmentScore'
-      | 'rankingScore' // Added 'rankingScore'
+      | 'rankingScore'
+      | 'textRelevance'  // Added 'rankingScore'
   ) => void;
   minBeds: number;
   setMinBeds: (val: number) => void;
@@ -129,7 +130,7 @@ const Filters = ({
         <select
           style={dropdownStyle}
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore')}
+          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance')}
         >
           <option value="priceDesc">Price (High to Low)</option>
           <option value="priceAsc">Price (Low to High)</option>
@@ -138,6 +139,7 @@ const Filters = ({
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
           <option value="rankingScore">Ranking Score</option> {/* Added Ranking Score option */}
+          <option value="textRelevance">Text Relevance</option>
         </select>
       </FilterGroup>
 
