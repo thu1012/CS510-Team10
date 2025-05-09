@@ -1,37 +1,53 @@
-# **Proposal: Intelligent Information Retrieval System for Real Estate Investment Analysis**
+# **Information Retrieval System for Real Estate Investment Analysis**
 
 **Track** 			Development Track  
-**Team Members** 	
-Jason Hu \[[jasonh11@illinois.edu](mailto:jasonh11@illinois.edu)\],
-Nianze Guo \[[nianzeg2@illinois.edu](mailto:nianzeg2@illinois.edu)\],
-Chenhan Luo \[[chenhan8@illinois.edu](mailto:chenhan8@illinois.edu)\],
-Haoran Tang \[[ht18@illinois.edu](mailto:ht18@illinois.edu)\]
+**Team Members** 	Jason Hu \[[jasonh11@illinois.edu](mailto:jasonh11@illinois.edu)\], Nianze Guo \[[nianzeg2@illinois.edu](mailto:nianzeg2@illinois.edu)\],   
+Chenhan Luo \[[chenhan8@illinois.edu](mailto:chenhan8@illinois.edu)\], Haoran Tang \[[ht18@illinois.edu](mailto:ht18@illinois.edu)\]   
 **Project Coordinator**		Jason Hu
 
 **Functions and Users**  
-We propose to develop a real estate-focused information retrieval (IR) system with a web-based interface that helps investors search for and rank properties based on investment potential. The system will function as a web-based search engine, allowing users to query properties based on factors such as rental yield, appreciation potential, local economic trends, and real estate sentiment analysis. The tool will provide real estate investors, financial analysts, and homebuyers looking for high-return properties with ranked search results, filtering and sorting properties based on financial criteria rather than just location and price.
+We developed a real estate-focused information retrieval (IR) system with a web-based interface to help investors search for and rank properties based on investment potential. The system functions as a browser-based search engine that enables users to search for properties using filters such as price, rental yield, property size, and neighborhood metrics (e.g., crime rates, school counts, hospital access). Our tool provides real estate investors, financial analysts, and homebuyers looking for high-return properties with ranked search results based on customized investment-relevant criteria.
+
+The system allows users to filter and sort properties not only by basic attributes like price and square footage but also by financial and neighborhood factors that impact investment value. By combining multiple publicly available datasets (e.g., crime statistics, school counts, hospital counts) into a unified ranking score, the tool helps users prioritize properties that meet their personalized investment goals.
 
 **Significance**  
-Most existing real estate platforms (e.g., Zillow, Redfin) focus only on basic property listings without advanced investment-based retrieval and ranking. Investors often struggle with information overload and lack efficient ways to filter and rank properties based on long-term returns. Our system addresses this gap by integrating advanced ranking models to help investors identify the best properties based on data-driven insights. By offering a specialized search engine, our system will save investors time by retrieving financially relevant properties first, reduce the need for manual research by automatically analyzing market trends, and provide personalized rankings and recommendations based on user preferences.
+Most real estate platforms like Zillow and Redfin primarily sort properties by price or location without providing meaningful investment analysis. Investors seeking properties with optimal rental yields, low crime rates, good school districts, and access to hospitals face information overload and lack integrated tools that consolidate these diverse factors into a single view.
+
+Our system addresses this gap by offering a search engine with an investment-centric ranking model that integrates crime, school, and hospital data alongside traditional property attributes. This tool saves time by automatically prioritizing properties with stronger investment signals, reducing the need for manual research across disparate sources, and enabling more data-driven decision-making.
 
 **Approach**  
-Our system will function as a real estate-focused search engine, aggregating and indexing property listings from sources like Zillow, Realtor.com, and public real estate databases. We will collect rental income data, historical price trends, tax rates, neighborhood statistics, and economic indicators to enhance retrieval effectiveness. Additionally, NLP techniques will be used to analyze property descriptions, detect investment-related keywords, and extract insights from real estate news articles and discussions.
+We built the system as a web-based application using React (frontend) and preprocessed static datasets for properties, crime rates, school counts, and hospital access. The core innovation lies in a custom ranking function that calculates a weighted score for each property based on multiple factors, including:  
+Neighborhood crime (both violent and property crime grades)  
+Local school count  
+Nearby hospital count  
+Property price  
+Property size (square footage)  
+Rental yield  
+Days on market
 
-For search and ranking, we will implement BM25 and Learning-to-Rank (LTR) models to prioritize properties based on rental yield, appreciation potential, and market demand. A custom scoring function will rank properties based on these financial metrics, helping investors identify high-return opportunities. To improve user experience, we will integrate query expansion techniques that suggest alternative searches based on user behavior and market trends. The system will be built using FastAPI (backend), Elasticsearch (search indexing), PostgreSQL (database), React (frontend), and NLP models from Hugging Face and spaCy. Potential risks include data accessibility limitations, which we plan to mitigate through web scraping and open datasets, and ranking model accuracy, which will be refined through continuous evaluation and feedback.
+We implemented a BM25-based search engine (using wink-nlp and wink-bm25-text-search) to enable keyword searches over property descriptions and addresses. Users can apply filters (e.g., min price, min rental yield, min beds) and adjust ranking parameters through an interactive UI.
+
+Originally, we planned to integrate a backend with FastAPI, PostgreSQL, and Elasticsearch. Due to timeline and scope adjustments, we transitioned to a fully client-side application using static JSON data and lightweight NLP/search libraries in the frontend. While the original design included Learning-to-Rank (LTR) models, we prioritized a custom weighted ranking approach for this iteration.
 
 **Evaluation**  
-To evaluate our system, we will conduct relevance testing by comparing its property rankings with recommendations from real estate investment experts to ensure alignment with professional decision-making criteria. Additionally, we will perform a user study to assess user satisfaction and measure the efficiency of investment property searches, specifically tracking how quickly users identify promising opportunities. Lastly, we will use IR metrics such as Precision@K with historical performance data, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG) to quantitatively assess the effectiveness of our ranking algorithm in retrieving high-quality investment properties.
+We plan to evaluate the system in three ways:
+
+1\. Quantitative evaluation using IR metrics: We will measure Precision@K, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG) by comparing system rankings against manually labeled “high-return” properties in a subset of the dataset.
+
+2\. Case study comparison: We will conduct case studies comparing our system’s top-ranked results for sample queries against publicly available listings and analyze alignment with known desirable properties.
+
+3\. User feedback: We will gather informal feedback from potential users (classmates or early-stage investors) to assess usability, ranking interpretability, and feature utility.
 
 **Timeline**  
-Initial data collection and preprocessing		March 30, 2025  
-Search indexing and retrieval implementation	April 10, 2025  
-Ranking model development and refinement	April 20, 2025  
-System integration and frontend development	April 30, 2025  
-Testing, evaluation, and final improvements	May 5, 2025  
-Project submission and presentation preparation	May 9, 2025
+Milestone	Completion Date  
+Data integration and preprocessing		Completed  
+Search indexing and retrieval (BM25)		Completed  
+Custom ranking model implementation		Completed  
+UI/UX development and system integration	Completed  
+Evaluation and documentation			May 9, 2025
 
 **Task Division**  
-Jason Hu		Overall system architecture, backend API development  
-Nianze Guo	Data collection and processing, web scraping, database management  
-Chenhan Luo	Search ranking model implementation, relevance evaluation  
-Haoran Tang	Frontend development, UI/UX design, system integration  
+Jason Hu		Frontend, search interface, filters, data collection and preprocessing  
+Nianze Guo	Ranking algorithm development, evaluation metrics implementation  
+Chenhan Luo	Dataset integration, evaluation metrics implementation  
+Haoran Tang	Ranking algorithm development, BM25 integration  
