@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import { getEnrichedProperties } from '../api/loadProperties';
-import { getRankedProperties } from '../utils/ranking'; // Import the ranking function
+import { getRankedProperties } from '../utils/ranking';
 import { Property } from '../types/Property';
 import PriceHistoryChart from '../components/PriceHistoryChart';
 
@@ -51,7 +51,8 @@ const PropertyDetail = () => {
     saleInfo,
     listingAgent,
     listingOffice,
-    rankingScore, // Destructure rankingScore
+    description,
+    rankingScore,
   } = property;
 
   const hoaFee = saleInfo?.hoa?.fee;
@@ -104,6 +105,13 @@ const PropertyDetail = () => {
         <p><strong>State:</strong> {state}</p>
       </div>
 
+      {description && (
+        <div style={sectionStyle}>
+          <h4>Property Description</h4>
+          <ExpandableDescription description={description} />
+        </div>
+      )}
+
       <div style={sectionStyle}>
         <h4>Listing Information</h4>
         {mlsName && mlsNumber && <p><strong>MLS:</strong> {mlsName} #{mlsNumber}</p>}
@@ -146,7 +154,44 @@ const PropertyDetail = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default PropertyDetail;
+// Expandable description component with read more/less toggle
+const ExpandableDescription = ({ description }: { description: string }) => {
+  const [expanded, setExpanded] = useState(false)
+  const maxLength = 300 // Character limit for collapsed view
+  
+  const isLongDescription = description.length > maxLength
+  const displayText = !expanded && isLongDescription 
+    ? description.substring(0, maxLength) + '...' 
+    : description
+  
+  const toggleButton = {
+    color: '#007bff',
+    background: 'none',
+    border: 'none',
+    padding: '0.5rem 0',
+    cursor: 'pointer',
+    fontWeight: 600 as const,
+    textDecoration: 'underline',
+    display: 'block',
+    marginTop: '0.5rem'
+  }
+
+  return (
+    <div>
+      <div dangerouslySetInnerHTML={{ __html: displayText.replace(/\n/g, '<br>') }} />
+      {isLongDescription && (
+        <button 
+          onClick={() => setExpanded(!expanded)}
+          style={toggleButton}
+        >
+          {expanded ? 'Read less' : 'Read more'}
+        </button>
+      )}
+    </div>
+  )
+}
+
+export default PropertyDetail
