@@ -3,10 +3,10 @@ import time
 from gemini_client import call_gemini  # Import the function from your existing file
 
 # Load the addresses from extracted_addresses.json
-with open("extracted_addresses.json", "r") as infile:
+with open("extracted_addresses_1.json", "r") as infile:
     addresses = json.load(infile)
 
-output_file = "descriptions.json"
+output_file = "descriptions_1.json"
 
 # Open the output file in write mode and start the JSON array
 with open(output_file, "w") as outfile:
