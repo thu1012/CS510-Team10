@@ -20,6 +20,7 @@ export type Property = {
   investmentScore?: number
   daysOnMarket?: number
   status?: string
+  description?: string  // Added description field
 
   saleInfo?: {
     price?: number

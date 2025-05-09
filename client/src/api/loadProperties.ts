@@ -52,7 +52,8 @@ export function getEnrichedProperties(): Property[] {
       history: sale.history || rent.history,
       rentalYield,
       investmentScore,
-      daysOnMarket
+      daysOnMarket,
+      description: item.description
     }
   })
 }
