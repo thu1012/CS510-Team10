@@ -1,5 +1,4 @@
 import React from 'react'
-// Import required components from the Recharts library for rendering the line chart
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid,
   ResponsiveContainer, Legend

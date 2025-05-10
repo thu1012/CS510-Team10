@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Define the prop types for the FilterGroup component
 interface FilterGroupProps {
   label: string                    
   children: React.ReactNode 

@@ -1,6 +1,5 @@
 // src/api/loadProperties.ts
 
-// Import raw property data and types
 import rawData from '../data/properties_full.json'
 import { Property } from '../types/Property'
 
@@ -10,7 +9,6 @@ function normalize(value: number, min: number, max: number, inverse = false): nu
   if (value == null || isNaN(value)) return 0
   // Calculate normalized value between 0 and 1
   const normalized = Math.min(Math.max((value - min) / (max - min), 0), 1)
-  // Return the normalized value, or its inverse if specified
   return inverse ? 1 - normalized : normalized
 }
 
@@ -33,10 +31,10 @@ export function getEnrichedProperties(): Property[] {
     // Calculate investment score based on rental yield, price, and days on market
     const investmentScore = rentalYield !== undefined && price > 0
       ? +(
-          normalize(rentalYield, 0, 10) * 0.5 + // Normalize rental yield and weight it
-          normalize(price, 0, 2_000_000, true) * 0.25 + // Normalize price and weight it inversely
-          normalize(daysOnMarket ?? 365, 0, 365, true) * 0.25 // Normalize days on market and weight it inversely
-        ).toFixed(2) * 10 // Final score out of 10
+          normalize(rentalYield, 0, 10) * 0.5 + 
+          normalize(price, 0, 2_000_000, true) * 0.25 + 
+          normalize(daysOnMarket ?? 365, 0, 365, true) * 0.25 
+        ).toFixed(2) * 10
       : undefined
 
     // Return enriched property object with additional calculated fields
@@ -62,9 +60,9 @@ export function getEnrichedProperties(): Property[] {
       saleInfo: sale,
       rentInfo: rent,
       history: sale.history || rent.history,
-      rentalYield, // Include rental yield as part of the enriched property
-      investmentScore, // Include investment score as part of the enriched property
-      daysOnMarket, // Include days on market
+      rentalYield, 
+      investmentScore, 
+      daysOnMarket, 
       description: item.description
     }
   })

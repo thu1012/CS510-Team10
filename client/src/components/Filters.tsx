@@ -1,7 +1,6 @@
 import React from 'react';
 import SliderFilter from './SliderFilter';
 
-// Define the prop types for the Filters component
 type Props = {
   // Numeric filter values and their corresponding setters
   minPrice: number;

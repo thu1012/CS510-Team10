@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Define the type for the props that the SliderFilter component will receive.
 type Props = {
   label: string; // The label to display for the slider filter.
   value: number; // The current value of the slider.

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
-import { getEnrichedProperties } from '../api/loadProperties'; // Import the function to fetch and enrich property data.
-import { getRankedProperties } from '../utils/ranking'; // Import the function to rank properties based on defined criteria.
-import { Property } from '../types/Property'; // Import the type definition for a property object.
-import PriceHistoryChart from '../components/PriceHistoryChart'; // Import the component to display the price history of a property.
+import { getEnrichedProperties } from '../api/loadProperties'; 
+import { getRankedProperties } from '../utils/ranking'; 
+import { Property } from '../types/Property'; 
+import PriceHistoryChart from '../components/PriceHistoryChart'; 
 
 // Interface extending the base Property type to include an optional ranking score.
 interface PropertyWithRanking extends Property {
@@ -12,11 +12,11 @@ interface PropertyWithRanking extends Property {
 
 // Style object for the sections containing property details.
 const sectionStyle = {
-  border: '1px solid #ccc', // Solid border with light gray color.
-  borderRadius: '8px', // Rounded corners for a softer appearance.
-  padding: '1rem', // Padding inside the section for spacing.
-  marginBottom: '1.5rem', // Margin below each section for spacing.
-  backgroundColor: '#fff', // White background color.
+  border: '1px solid #ccc', 
+  borderRadius: '8px', 
+  padding: '1rem',
+  marginBottom: '1.5rem', 
+  backgroundColor: '#fff', 
 };
 
 // Component to display the detailed information for a single property.
@@ -27,14 +27,14 @@ const PropertyDetail = () => {
   const location = useLocation();
   // Fetches all enriched properties and then ranks them using the getRankedProperties function.
   const allProperties: (Property & { rankingScore?: number })[] = getRankedProperties(getEnrichedProperties(), {
-    school: 0.15, // Weight for school proximity in the ranking.
-    crimeRate: 0.25, // Weight for crime rate in the ranking.
-    hospital: 0.10, // Weight for hospital proximity in the ranking.
-    price: 0.15, // Weight for price in the ranking.
-    size: 0.35, // Weight for size (square footage) in the ranking.
-    investmentScore: 0.0, // Weight for the pre-calculated investment score.
-    rentalYield: 0.0, // Weight for the rental yield.
-    daysOnMarket: 0.0, // Weight for the number of days the property has been on the market.
+    school: 0.15, 
+    crimeRate: 0.25, 
+    hospital: 0.10, 
+    price: 0.15, 
+    size: 0.35, 
+    investmentScore: 0.0, 
+    rentalYield: 0.0, 
+    daysOnMarket: 0.0, 
   }); // Get all properties with ranking
   // Finds the specific property from the ranked list based on the ID from the URL.
   const property: PropertyWithRanking | undefined = allProperties.find((p) => p.id === id);
@@ -44,24 +44,24 @@ const PropertyDetail = () => {
 
   // Destructures various properties from the found property object.
   const {
-    formattedAddress, // The formatted address of the property.
-    propertyType, // The type of property (e.g., house, apartment).
-    bedrooms, // Number of bedrooms.
-    bathrooms, // Number of bathrooms.
-    squareFootage, // Square footage of the property.
-    zipCode, // ZIP code of the property.
-    state, // State of the property.
-    yearBuilt, // Year the property was built.
-    lotSize, // Size of the property's lot.
-    price, // Price of the property.
-    rent, // Estimated rent for the property.
-    rentalYield, // Calculated rental yield.
-    investmentScore, // Pre-calculated investment score.
-    saleInfo, // Object containing sale-related information.
-    listingAgent, // Information about the listing agent.
-    listingOffice, // Information about the listing office.
-    description, // Description of the property.
-    rankingScore, // Calculated ranking score.
+    formattedAddress, 
+    propertyType, 
+    bedrooms, 
+    bathrooms, 
+    squareFootage, 
+    zipCode, 
+    state,
+    yearBuilt, 
+    lotSize, 
+    price, 
+    rent, 
+    rentalYield, 
+    investmentScore, 
+    saleInfo, 
+    listingAgent, 
+    listingOffice, 
+    description, 
+    rankingScore,
   } = property;
 
   // Extracts the HOA fee from the sale information, if available.
@@ -83,10 +83,10 @@ const PropertyDetail = () => {
           search: location.search, // <- reattaches previous filters
         }}
         style={{
-          display: 'inline-block', // Make the link behave like a block element for better styling.
-          marginBottom: '1rem', // Add some margin below the link.
-          textDecoration: 'none', // Remove the default underline.
-          color: '#007bff', // Use a blue color, typically used for links.
+          display: 'inline-block', 
+          marginBottom: '1rem', 
+          textDecoration: 'none', 
+          color: '#007bff', 
         }}
       >
         ← Back to search
@@ -195,20 +195,19 @@ const ExpandableDescription = ({ description }: { description: string }) => {
   const isLongDescription = description.length > maxLength;
   // Determines the text to display based on the expanded state and description length.
   const displayText = !expanded && isLongDescription 
-    ? description.substring(0, maxLength) + '...' // Show a truncated version with ellipsis.
-    : description; // Show the full description if expanded or short enough.
+    ? description.substring(0, maxLength) + '...' 
+    : description; 
   
-  // Style object for the "Read more/less" button.
   const toggleButton = {
-    color: '#007bff', // Blue color, typically used for links.
-    background: 'none', // No background.
-    border: 'none', // No border.
-    padding: '0.5rem 0', // Padding above and below the text.
-    cursor: 'pointer', // Show a pointer cursor on hover.
-    fontWeight: 600 as const, // Make the text bold.
-    textDecoration: 'underline', // Underline the text.
-    display: 'block', // Make the button a block element.
-    marginTop: '0.5rem', // Add some margin above the button.
+    color: '#007bff', 
+    background: 'none', 
+    border: 'none', 
+    padding: '0.5rem 0', 
+    cursor: 'pointer', 
+    fontWeight: 600 as const, 
+    textDecoration: 'underline', 
+    display: 'block', 
+    marginTop: '0.5rem', 
   };
 
   // Renders the expandable description.
@@ -220,7 +219,7 @@ const ExpandableDescription = ({ description }: { description: string }) => {
       {isLongDescription && (
         <button 
           onClick={() => setExpanded(!expanded)} // Toggle the expanded state on click.
-          style={toggleButton} // Apply the button styling.
+          style={toggleButton} 
         >
           {expanded ? 'Read less' : 'Read more'} {/* Display "Read less" or "Read more" based on the expanded state. */}
         </button>

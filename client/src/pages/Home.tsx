@@ -45,16 +45,16 @@ const Home = () => {
 
   const [bm25Scores, setBm25Scores] = useState<Record<number, number>>({});
 
-  // Define your weights for the ranking
+  // weights for the ranking
   const rankingWeights = {
     school: 0.15,
     crimeRate: 0.25,
     hospital: 0.10,
-    price: 0.15, // Adjusted weight
-    size: 0.35,  // Adjusted weight
-    investmentScore: 0.0, // Optional: Include if you still want to weigh it
-    rentalYield: 0.0,     // Optional: Include if you still want to weigh it
-    daysOnMarket: 0.0,    // Optional: Include if you still want to weigh it
+    price: 0.15, 
+    size: 0.35,  
+    investmentScore: 0.0, 
+    rentalYield: 0.0,     
+    daysOnMarket: 0.0,  
   };
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const Home = () => {
     setMinScore(getParam('minScore', 0));
     setMinDaysOnMarket(getParam('minDaysOnMarket', 0));
     setMaxDaysOnMarket(getParam('maxDaysOnMarket', 365));
-    setSortBy((searchParams.get('sortBy') as any) || 'rankingScore'); // Ensure sortBy is updated from params
+    setSortBy((searchParams.get('sortBy') as any) || 'rankingScore');
     setPropertyType(searchParams.get('propertyType') || '');
     setSearchQuery(searchParams.get('q') || '');
 
@@ -157,7 +157,7 @@ const Home = () => {
     const hits = bm25.search(
       searchQuery,
       allProperties.length
-    ) as Array<[number, number]>;             // ← cast for TS
+    ) as Array<[number, number]>;             
     const map: Record<number, number> = {};
     hits.forEach(([id, score]) => { map[id] = score; });
     setBm25Scores(map);
@@ -231,7 +231,6 @@ const Home = () => {
     bm25Scores,
     searchQuery,
     sortBy,
-    // numeric filter flags & values
     enableMinPrice, enableMaxPrice,
     enableMinRent, enableMinYield,
     enableMinBeds, enableMinBaths,
