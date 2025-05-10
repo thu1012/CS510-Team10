@@ -1,0 +1,275 @@
+[
+  {
+    "query": "High-return rentals in Springfield under $1500",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1500,
+      "minRent": 0,
+      "minYield": 8,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "rankingScore"
+  },
+  {
+    "query": "Affordable apartments in Springfield",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Apartment"
+    },
+    "sortBy": "rentalYield"
+  },
+  {
+    "query": "New condos in Chatham",
+    "searchQuery": "Chatham",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 2000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Condo",
+      "minYearBuilt": 2010
+    },
+    "sortBy": "investmentScore"
+  },
+  {
+    "query": "Premium single-family homes in Springfield",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 1500,
+      "maxPrice": 5000,
+      "minRent": 1500,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Single Family"
+    },
+    "sortBy": "priceDesc"
+  },
+  {
+    "query": "High-demand rentals in Springfield",
+    "searchQuery": "Springfield high demand",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 2000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 30,
+      "propertyType": ""
+    },
+    "sortBy": "textRelevance"
+  },
+  {
+    "query": "Small apartments in Belleville",
+    "searchQuery": "Belleville",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1500,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "maxSqft": 1000,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Apartment"
+    },
+    "sortBy": "rentAsc"
+  },
+  {
+    "query": "High-yield properties in Chatham",
+    "searchQuery": "Chatham",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 2500,
+      "minRent": 0,
+      "minYield": 10,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "rentalYield"
+  },
+  {
+    "query": "Spacious rentals in Springfield",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 3500,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 1200,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "investmentScore"
+  },
+  {
+    "query": "Affordable condos in Springfield under $1200",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1200,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Condo"
+    },
+    "sortBy": "rankingScore"
+  },
+  {
+    "query": "Newer rentals in Sherman",
+    "searchQuery": "Sherman",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 4000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "",
+      "minYearBuilt": 2000
+    },
+    "sortBy": "priceAsc"
+  },
+  {
+    "query": "Low-price rentals in Pawnee",
+    "searchQuery": "Pawnee",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "rentAsc"
+  },
+  {
+    "query": "High-investment rentals in Springfield",
+    "searchQuery": "Springfield",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 2000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 7,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "investmentScore"
+  },
+  {
+    "query": "Quick-turnover apartments in Springfield",
+    "searchQuery": "Springfield quick turnover",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 1500,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 10,
+      "propertyType": "Apartment"
+    },
+    "sortBy": "textRelevance"
+  },
+  {
+    "query": "Mid-range rentals in Belleville",
+    "searchQuery": "Belleville",
+    "filters": {
+      "minPrice": 800,
+      "maxPrice": 1500,
+      "minRent": 800,
+      "minYield": 0,
+      "minBeds": 0,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": ""
+    },
+    "sortBy": "rentalYield"
+  },
+  {
+    "query": "Family-friendly homes in Chatham",
+    "searchQuery": "Chatham",
+    "filters": {
+      "minPrice": 0,
+      "maxPrice": 3000,
+      "minRent": 0,
+      "minYield": 0,
+      "minBeds": 3,
+      "minBaths": 0,
+      "minSqft": 0,
+      "minScore": 0,
+      "minDaysOnMarket": 0,
+      "maxDaysOnMarket": 365,
+      "propertyType": "Single Family"
+    },
+    "sortBy": "rankingScore"
+  }
+]
