@@ -1,0 +1,42 @@
+[
+    {
+        "query": "quiet neighborhood and convenient",
+        "mrr": 0.5
+    },
+    {
+        "query": "downtown",
+        "mrr": 1.0
+    },
+    {
+        "query": "Beautiful view",
+        "mrr": 1.0
+    },
+    {
+        "query": "Near school",
+        "mrr": 1.0
+    },
+    {
+        "query": "Suburb countryside",
+        "mrr": 1.0
+    },
+    {
+        "query": "Near hospital",
+        "mrr": 1.0
+    },
+    {
+        "query": "Natural light",
+        "mrr": 1.0
+    },
+    {
+        "query": "Private and safe",
+        "mrr": 0.5
+    },
+    {
+        "query": "Public transportations",
+        "mrr": 1.0
+    },
+    {
+        "query": "relaxing and entertaining",
+        "mrr": 0.33
+    }
+]
