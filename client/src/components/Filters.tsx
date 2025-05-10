@@ -1,25 +1,17 @@
 import React from 'react';
 import SliderFilter from './SliderFilter';
 
+// Define the prop types for the Filters component
 type Props = {
+  // Numeric filter values and their corresponding setters
   minPrice: number;
   maxPrice: number;
   setMinPrice: (val: number) => void;
   setMaxPrice: (val: number) => void;
   minYield: number;
   setMinYield: (val: number) => void;
-  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance' ; // Added 'rankingScore'
-  setSortBy: (
-    val:
-      | 'priceDesc'
-      | 'priceAsc'
-      | 'rentDesc'
-      | 'rentAsc'
-      | 'rentalYield'
-      | 'investmentScore'
-      | 'rankingScore'
-      | 'textRelevance'  // Added 'rankingScore'
-  ) => void;
+  sortBy: 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance';
+  setSortBy: (val: Props['sortBy']) => void;
   minBeds: number;
   setMinBeds: (val: number) => void;
   minBaths: number;
@@ -37,6 +29,7 @@ type Props = {
   maxDaysOnMarket: number;
   setMaxDaysOnMarket: (val: number) => void;
 
+  // Booleans to toggle filter activation
   enableMinPrice: boolean;
   enableMaxPrice: boolean;
   enableMinYield: boolean;
@@ -48,6 +41,7 @@ type Props = {
   enableMinDays: boolean;
   enableMaxDays: boolean;
 
+  // Setters to toggle filter activation
   setEnableMinPrice: (enabled: boolean) => void;
   setEnableMaxPrice: (enabled: boolean) => void;
   setEnableMinYield: (enabled: boolean) => void;
@@ -60,6 +54,7 @@ type Props = {
   setEnableMinDays: (enabled: boolean) => void;
 };
 
+// Inline CSS for dropdown elements
 const dropdownStyle: React.CSSProperties = {
   width: '100%',
   padding: '0.4rem',
@@ -71,6 +66,7 @@ const dropdownStyle: React.CSSProperties = {
   appearance: 'none',
 };
 
+// Reusable UI group for labeled filter sections
 const FilterGroup = ({ label, children }: { label: string; children: React.ReactNode }) => (
   <div style={{ marginBottom: '1rem' }}>
     <label style={{ fontSize: '0.95rem', fontWeight: 500 }}>{label}</label>
@@ -78,6 +74,7 @@ const FilterGroup = ({ label, children }: { label: string; children: React.React
   </div>
 );
 
+// Main Filters component
 const Filters = ({
   minPrice,
   maxPrice,
@@ -126,11 +123,14 @@ const Filters = ({
 }: Props) => {
   return (
     <div>
+      {/* Dropdown filter for sort options */}
       <FilterGroup label="Sort By">
         <select
           style={dropdownStyle}
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as 'priceDesc' | 'priceAsc' | 'rentDesc' | 'rentAsc' | 'rentalYield' | 'investmentScore' | 'rankingScore' | 'textRelevance')}
+          onChange={(e) =>
+            setSortBy(e.target.value as Props['sortBy'])
+          }
         >
           <option value="priceDesc">Price (High to Low)</option>
           <option value="priceAsc">Price (Low to High)</option>
@@ -138,11 +138,12 @@ const Filters = ({
           <option value="rentAsc">Rent (Low to High)</option>
           <option value="rentalYield">Rental Yield</option>
           <option value="investmentScore">Investment Score</option>
-          <option value="rankingScore">Ranking Score</option> {/* Added Ranking Score option */}
+          <option value="rankingScore">Ranking Score</option> {/* Custom ranking metric */}
           <option value="textRelevance">Text Relevance</option>
         </select>
       </FilterGroup>
 
+      {/* Dropdown for selecting property type */}
       <FilterGroup label="Property Type">
         <select
           style={dropdownStyle}
@@ -157,120 +158,17 @@ const Filters = ({
         </select>
       </FilterGroup>
 
-      {/* ... (rest of your SliderFilter components) */}
-      <SliderFilter
-        label="Min Price"
-        value={minPrice}
-        setValue={setMinPrice}
-        min={0}
-        max={2000000}
-        step={10000}
-        prefix="$"
-        enabled={enableMinPrice}
-        setEnabled={setEnableMinPrice}
-      />
-
-      <SliderFilter
-        label="Max Price"
-        value={maxPrice}
-        setValue={setMaxPrice}
-        min={50000}
-        max={5000000}
-        step={50000}
-        prefix="$"
-        enabled={enableMaxPrice}
-        setEnabled={setEnableMaxPrice}
-      />
-
-      <SliderFilter
-        label="Min Bedrooms"
-        value={minBeds}
-        setValue={setMinBeds}
-        min={0}
-        max={10}
-        step={1}
-        enabled={enableMinBeds}
-        setEnabled={setEnableMinBeds}
-      />
-
-      <SliderFilter
-        label="Min Bathrooms"
-        value={minBaths}
-        setValue={setMinBaths}
-        min={0}
-        max={10}
-        step={0.5}
-        enabled={enableMinBaths}
-        setEnabled={setEnableMinBaths}
-      />
-
-      <SliderFilter
-        label="Min Sqft"
-        value={minSqft}
-        setValue={setMinSqft}
-        min={0}
-        max={10000}
-        step={100}
-        enabled={enableMinSqft}
-        setEnabled={setEnableMinSqft}
-      />
-
-      <SliderFilter
-        label="Min Rent"
-        value={minRent}
-        setValue={setMinRent}
-        min={0}
-        max={10000}
-        step={100}
-        prefix="$"
-        enabled={enableMinRent}
-        setEnabled={setEnableMinRent}
-      />
-
-      <SliderFilter
-        label="Min Days on Market"
-        value={minDaysOnMarket}
-        setValue={setMinDaysOnMarket}
-        min={0}
-        max={3650}
-        step={5}
-        enabled={enableMinDays}
-        setEnabled={setEnableMinDays}
-      />
-
-      <SliderFilter
-        label="Max Days on Market"
-        value={maxDaysOnMarket}
-        setValue={setMaxDaysOnMarket}
-        min={0}
-        max={3650}
-        step={5}
-        enabled={enableMaxDays}
-        setEnabled={setEnableMaxDays}
-      />
-
-      <SliderFilter
-        label="Min InvestmentScore"
-        value={minScore}
-        setValue={setMinScore}
-        min={0}
-        max={10}
-        step={0.1}
-        enabled={enableMinScore}
-        setEnabled={setEnableMinScore}
-      />
-
-      <SliderFilter
-        label="Min Rental Yield"
-        value={minYield}
-        setValue={setMinYield}
-        min={0}
-        max={20}
-        step={0.1}
-        suffix="%"
-        enabled={enableMinYield}
-        setEnabled={setEnableMinYield}
-      />
+      {/* Range sliders for numeric filters with enable toggles */}
+      <SliderFilter label="Min Price" value={minPrice} setValue={setMinPrice} min={0} max={2000000} step={10000} prefix="$" enabled={enableMinPrice} setEnabled={setEnableMinPrice} />
+      <SliderFilter label="Max Price" value={maxPrice} setValue={setMaxPrice} min={50000} max={5000000} step={50000} prefix="$" enabled={enableMaxPrice} setEnabled={setEnableMaxPrice} />
+      <SliderFilter label="Min Bedrooms" value={minBeds} setValue={setMinBeds} min={0} max={10} step={1} enabled={enableMinBeds} setEnabled={setEnableMinBeds} />
+      <SliderFilter label="Min Bathrooms" value={minBaths} setValue={setMinBaths} min={0} max={10} step={0.5} enabled={enableMinBaths} setEnabled={setEnableMinBaths} />
+      <SliderFilter label="Min Sqft" value={minSqft} setValue={setMinSqft} min={0} max={10000} step={100} enabled={enableMinSqft} setEnabled={setEnableMinSqft} />
+      <SliderFilter label="Min Rent" value={minRent} setValue={setMinRent} min={0} max={10000} step={100} prefix="$" enabled={enableMinRent} setEnabled={setEnableMinRent} />
+      <SliderFilter label="Min Days on Market" value={minDaysOnMarket} setValue={setMinDaysOnMarket} min={0} max={3650} step={5} enabled={enableMinDays} setEnabled={setEnableMinDays} />
+      <SliderFilter label="Max Days on Market" value={maxDaysOnMarket} setValue={setMaxDaysOnMarket} min={0} max={3650} step={5} enabled={enableMaxDays} setEnabled={setEnableMaxDays} />
+      <SliderFilter label="Min InvestmentScore" value={minScore} setValue={setMinScore} min={0} max={10} step={0.1} enabled={enableMinScore} setEnabled={setEnableMinScore} />
+      <SliderFilter label="Min Rental Yield" value={minYield} setValue={setMinYield} min={0} max={20} step={0.1} suffix="%" enabled={enableMinYield} setEnabled={setEnableMinYield} />
     </div>
   );
 };
