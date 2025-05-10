@@ -1,0 +1,137 @@
+[
+    {
+      "name": "High-Return Rentals in Springfield",
+      "query": "High-return rentals in Springfield under $1500",
+      "location": "Springfield, IL",
+      "weights": {
+        "school": 0.05,
+        "crimeRate": 0.10,
+        "hospital": 0.05,
+        "price": 0.15,
+        "size": 0.05,
+        "investmentScore": 0.25,
+        "rentalYield": 0.30,
+        "daysOnMarket": 0.05
+      },
+      "benchmarkProperties": [
+        {
+          "id": "1530-E-Melrose-St,-Springfield,-IL-62703",
+          "desirabilityReason": "Top rated rental yield with low maintenance costs",
+          "source": "Local Property Management Survey 2023"
+        },
+        {
+          "id": "564-W-Elliott-Ave,-Springfield,-IL-62702",
+          "desirabilityReason": "Consistent rental history with above-average returns",
+          "source": "Realtor.com Investment Analysis"
+        },
+        {
+          "id": "155-S-Durkin-Dr,-Apt-7,-Springfield,-IL-62704",
+          "desirabilityReason": "Strong rental demand in growing neighborhood",
+          "source": "Zillow Rental Index Report"
+        },
+        {
+          "id": "403-S-Main-St,-Apt-D,-Chatham,-IL-62629",
+          "desirabilityReason": "Low vacancy rates with appreciating property value",
+          "source": "Local Property Management Survey 2023"
+        }
+      ],
+      "publicListings": [
+        {
+          "platform": "Zillow",
+          "url": "https://www.zillow.com/homedetails/example1",
+          "rank": 1,
+          "key_features": ["High rental yield", "Low maintenance", "Good location"]
+        },
+        {
+          "platform": "Redfin",
+          "url": "https://www.redfin.com/property/example2",
+          "rank": 2,
+          "key_features": ["Cash flow positive", "Updated appliances", "Low vacancy area"]
+        },
+        {
+          "platform": "Realtor.com",
+          "url": "https://www.realtor.com/property/example3",
+          "rank": 1,
+          "key_features": ["10% cap rate", "Renovated", "Near major employer"]
+        }
+      ]
+    },
+    {
+      "name": "Family-Friendly Homes in Springfield",
+      "query": "Family-friendly homes near good schools in Springfield",
+      "location": "Springfield, IL",
+      "weights": {
+        "school": 0.40,
+        "crimeRate": 0.20,
+        "hospital": 0.10,
+        "price": 0.10,
+        "size": 0.10,
+        "investmentScore": 0.05,
+        "rentalYield": 0.00,
+        "daysOnMarket": 0.05
+      },
+      "benchmarkProperties": [
+        {
+          "id": "2135-Lindbergh-Blvd,-Springfield,-IL-62704",
+          "desirabilityReason": "Near top-rated school district with family amenities",
+          "source": "Springfield Family Housing Guide 2023"
+        },
+        {
+          "id": "3429-Sherbourne-Ln,-Springfield,-IL-62704",
+          "desirabilityReason": "Safe neighborhood with community parks",
+          "source": "Springfield Community Survey"
+        },
+        {
+          "id": "2317-Huntleigh-Rd,-Springfield,-IL-62704",
+          "desirabilityReason": "Large lot size ideal for families",
+          "source": "Local Realtor Top Family Homes List"
+        }
+      ],
+      "publicListings": [
+        {
+          "platform": "Zillow",
+          "url": "https://www.zillow.com/homedetails/example4",
+          "rank": 1,
+          "key_features": ["Top school district", "Safe neighborhood", "Community pool"]
+        },
+        {
+          "platform": "Trulia",
+          "url": "https://www.trulia.com/property/example5",
+          "rank": 2,
+          "key_features": ["Great schools nearby", "Family-friendly community", "Parks within walking distance"]
+        }
+      ]
+    },
+    {
+      "name": "Affordable Investment Properties in Chicago",
+      "query": "Affordable investment properties with good appreciation potential",
+      "location": "Chicago, IL",
+      "weights": {
+        "school": 0.05,
+        "crimeRate": 0.10,
+        "hospital": 0.05,
+        "price": 0.25,
+        "size": 0.05,
+        "investmentScore": 0.35,
+        "rentalYield": 0.10,
+        "daysOnMarket": 0.05
+      },
+      "benchmarkProperties": [
+        {
+          "id": "7120-S-Ridgeland-Ave,-Chicago,-IL-60649",
+          "desirabilityReason": "Located in up-and-coming neighborhood with city investment",
+          "source": "Chicago Real Estate Investment Report 2023"
+        },
+        {
+          "id": "5412-W-Ferdinand-St,-Chicago,-IL-60644",
+          "desirabilityReason": "Strong appreciation trends over past 3 years",
+          "source": "Urban Land Institute Report"
+        },
+        {
+          "id": "2825-N-Leavitt-St,-Apt-1,-Chicago,-IL-60618",
+          "desirabilityReason": "Recently rezoned area with development potential",
+          "source": "Chicago Zoning Department Update"
+        }
+      ]
+    }
+  ]
