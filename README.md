@@ -51,3 +51,141 @@ Jason Hu		Frontend, search interface, filters, data collection and preprocessing
 Nianze Guo	Ranking algorithm development, evaluation metrics implementation  
 Chenhan Luo	Dataset integration, evaluation metrics implementation  
 Haoran Tang	Ranking algorithm development, BM25 integration  
+
+# Information Retrieval System Installation & Usage Guide
+
+## Source Code Repository
+
+The system’s source code is hosted in a public GitHub repository at:
+
+[https://github.com/thu1012/CS510-Team10](https://github.com/thu1012/CS510-Team10)
+
+## Installation Instructions
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/thu1012/CS510-Team10
+```
+
+### 2. Install required dependencies:
+
+The project requires the following npm packages:
+
+| Package                 | Purpose                        |
+| ----------------------- | ------------------------------ |
+| react                   | Core UI framework              |
+| react-dom               | React DOM rendering            |
+| react-router-dom        | Routing/navigation             |
+| recharts                | Price history charting         |
+| wink-nlp                | Natural language processing    |
+| wink-eng-lite-web-model | English NLP model for wink-nlp |
+| wink-bm25-text-search   | BM25 text search engine        |
+
+Install dependencies with:
+
+```bash
+npm install react react-dom react-router-dom recharts wink-nlp wink-eng-lite-web-model wink-bm25-text-search typescript
+```
+
+### 3. Start the development server:
+
+```bash
+npm start
+```
+
+This will open the app at [http://localhost:3000](http://localhost:3000) in your default browser.
+
+## Configuration
+
+### Ranking Weights
+
+Key system parameters are configured directly in code (no external config files required). The metric weights used for ranking properties are defined in `src/pages/Home.tsx` under the `rankingWeights` object:
+
+```typescript
+const rankingWeights = {
+  school: 0.15,
+  crimeRate: 0.25,
+  hospital: 0.10,
+  price: 0.15,
+  size: 0.35,
+  investmentScore: 0.0,
+  rentalYield: 0.0,
+  daysOnMarket: 0.0,
+};
+```
+
+To adjust ranking priorities, modify these values and rebuild/restart the app.
+
+### Static Data Files
+
+* `src/data/properties_full.json`
+* `src/data/crimeData.json`
+* `src/data/schoolData.json`
+* `src/data/hospitalData.json`
+* `src/data/description.json`
+
+To update datasets, replace these JSON files with updated versions using the same schema.
+
+## Usage Instructions
+
+Once the app is running, users interact through two main pages:
+
+### Search Page (`/`)
+
+* Use the search bar to enter free-text queries (matches property address or description).
+* Use the filter sidebar to set numeric or categorical filters:
+
+  * Min/Max Price
+  * Min Rental Yield
+  * Min Bedrooms / Bathrooms
+  * Min Square Footage
+  * Min Investment Score
+  * Min/Max Days on Market
+  * Property Type
+* Enable or disable filters using the toggle checkboxes beside each filter.
+* Select sorting criteria from the dropdown (price ascending/descending, rental yield, investment score, ranking score, text relevance).
+* View filtered results in a two-column grid of property cards.
+
+Each property card displays:
+
+* Address
+* Property Type
+* Bedrooms / Bathrooms
+* Price
+* Rental Yield
+* Investment Score
+* Ranking Score
+
+Click a property card to open the detail page.
+
+### Property Detail Page (`/property/:id`)
+
+* Shows full property address and type.
+* Displays all available attributes:
+
+  * Price, Rent, Yield, Investment Score, Ranking Score
+  * Square Footage, Lot Size, Year Built, ZIP code, State
+* Shows listing agent and office contact details (if available).
+* Renders a price history chart (if historical price data exists).
+* Shows full property description with a “Read more”/“Read less” toggle.
+* Includes a “Back to Search” link that preserves prior filter/search settings.
+
+## Example Usage Scenarios
+
+### Example 1: Find affordable properties with high rental yield
+
+1. Set Max Price to \$300,000 (enable toggle).
+2. Set Min Rental Yield to 6% (enable toggle).
+3. Select sort by Rental Yield.
+
+### Example 2: Find properties in low-crime areas near schools
+
+1. Set Min School Count to 5 (enable toggle).
+2. Disable Min Price toggle.
+3. Select sort by Ranking Score.
+
+### Example 3: Search properties by keyword
+
+1. Enter `Belleville` in the search bar.
+2. Select sort by Text Relevance.
