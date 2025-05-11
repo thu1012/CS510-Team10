@@ -30,13 +30,9 @@ We implemented a BM25-based search engine (using wink-nlp and wink-bm25-text-sea
 Originally, we planned to integrate a backend with FastAPI, PostgreSQL, and Elasticsearch. Due to timeline and scope adjustments, we transitioned to a fully client-side application using static JSON data and lightweight NLP/search libraries in the frontend. While the original design included Learning-to-Rank (LTR) models, we prioritized a custom weighted ranking approach for this iteration.
 
 **Evaluation**  
-We plan to evaluate the system in three ways:
+We plan to evaluate the system:
 
-1\. Quantitative evaluation using IR metrics: We will measure Precision@K, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG) by comparing system rankings against manually labeled “high-return” properties in a subset of the dataset.
-
-2\. Case study comparison: We will conduct case studies comparing our system’s top-ranked results for sample queries against publicly available listings and analyze alignment with known desirable properties.
-
-3\. User feedback: We will gather informal feedback from potential users (classmates or early-stage investors) to assess usability, ranking interpretability, and feature utility.
+Quantitative evaluation using IR metrics: We will measure Precision@K, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG) by comparing system rankings against manually labeled “high-return” properties in a subset of the dataset.
 
 **Timeline**  
 Milestone	Completion Date  
